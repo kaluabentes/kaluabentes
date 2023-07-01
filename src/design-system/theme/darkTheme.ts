@@ -1,6 +1,6 @@
 import base from "./base"
 
-import buttonDarkTheme from "../Button/buttonDarkTheme"
+import buttonDarkTheme from "../components/Button/buttonDarkTheme"
 
 const darkTheme = {
   ...base,

@@ -1,6 +1,6 @@
 import base from "./base"
 
-import buttonLightTheme from "../Button/buttonLightTheme"
+import buttonLightTheme from "../components/Button/buttonLightTheme"
 
 const lightTheme = {
   ...base,
