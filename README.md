@@ -1,4 +1,4 @@
-<h1 align="center">Kaluã Bentes</h1>
+# Kaluã Bentes
 
 Este é o código fonte do meu site pessoal.
 
