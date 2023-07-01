@@ -1,5 +1,6 @@
 <h1 align="center">Kaluã Bentes</h1>
-<h2 align="center">Desenvolvedor Front-End</h2>
+
+Este é o código fonte do meu site pessoal.
 
 ## Getting Started
 
