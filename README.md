@@ -1,6 +1,5 @@
-<p align="center">
-## Kaluã Bentes
-</p>
+<h1 align="center">Kaluã Bentes</h1>
+<h2 align="center">Desenvolvedor Front-End</h2>
 
 ## Getting Started
 
