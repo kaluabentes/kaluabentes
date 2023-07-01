@@ -1,21 +1,12 @@
 import base from "./base"
-import palette from "./palette"
 
-const darkTheme = {
+import buttonLightTheme from "../Button/buttonLightTheme"
+
+const lightTheme = {
   ...base,
-  colors: {
-    background: "white",
-    button: {
-      primary: {
-        background: palette.primary[600],
-        backgroundHover: palette.primary[700],
-      },
-      default: {
-        background: "white",
-        backgroundHover: palette.secondary[100],
-      },
-    },
+  components: {
+    button: buttonLightTheme,
   },
 }
 
-export default darkTheme
+export default lightTheme

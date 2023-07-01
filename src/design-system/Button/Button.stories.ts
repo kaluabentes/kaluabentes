@@ -17,3 +17,43 @@ export const Default: Story = {
     children: "Action",
   },
 }
+
+export const Primary: Story = {
+  args: {
+    variant: "primary",
+    children: "Action",
+  },
+}
+
+export const Small: Story = {
+  args: {
+    variant: "primary",
+    children: "Action",
+    size: "sm",
+  },
+}
+
+export const Medium: Story = {
+  args: {
+    variant: "primary",
+    children: "Action",
+    size: "md",
+  },
+}
+
+export const Large: Story = {
+  args: {
+    variant: "primary",
+    children: "Action",
+    size: "lg",
+  },
+}
+
+export const isBlock: Story = {
+  args: {
+    variant: "primary",
+    children: "Action",
+    size: "lg",
+    isBlock: true,
+  },
+}
