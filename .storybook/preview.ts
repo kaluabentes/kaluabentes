@@ -1,7 +1,7 @@
 import type { Preview } from "@storybook/react"
 import { ThemeProvider } from "styled-components"
 import { withThemeFromJSXProvider } from "@storybook/addon-styling"
-import "@fontsource-variable/inter"
+import "../src/design-system/theme/font"
 
 import lightTheme from "../src/design-system/theme/lightTheme"
 import darkTheme from "../src/design-system/theme/darkTheme"

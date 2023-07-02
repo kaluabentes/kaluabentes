@@ -1,4 +1,4 @@
-import { render, screen } from "@testing-library/react"
+import { fireEvent, render, screen, waitFor } from "@testing-library/react"
 import { axe, toHaveNoViolations } from "jest-axe"
 import { ThemeProvider } from "styled-components"
 import "@testing-library/jest-dom"
@@ -10,9 +10,9 @@ import Button from "./Button"
 
 expect.extend(toHaveNoViolations)
 
-const ThemedButton = () => (
+const ThemedButton = ({ onClick = () => {} }) => (
   <ThemeProvider theme={lightTheme}>
-    <Button>Action</Button>
+    <Button onClick={onClick}>Action</Button>
   </ThemeProvider>
 )
 
@@ -23,6 +23,17 @@ describe("Button", () => {
     const button = screen.getByRole("button")
 
     expect(button).toHaveTextContent("Action")
+  })
+
+  it("interacts without problems", async () => {
+    const handleClick = jest.fn()
+
+    render(<ThemedButton onClick={handleClick} />)
+
+    const button = screen.getByRole("button")
+    fireEvent.click(button)
+
+    await waitFor(() => expect(handleClick).toHaveBeenCalled())
   })
 
   it("should not have basic accessibility issues", async () => {

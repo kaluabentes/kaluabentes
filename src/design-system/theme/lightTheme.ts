@@ -8,6 +8,9 @@ const lightTheme = {
   body: {
     color: palette.secondary[900],
   },
+  hero: {
+    color: palette.secondary[600],
+  },
   components: {
     button: buttonLightTheme,
   },

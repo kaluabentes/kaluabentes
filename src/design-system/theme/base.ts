@@ -1,6 +1,6 @@
 const base = {
   typography: {
-    fontFamily: "'Inter Variable', sans-serif",
+    fontFamily: "'Poppins', sans-serif",
   },
 }
 

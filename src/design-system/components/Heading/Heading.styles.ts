@@ -4,8 +4,8 @@ import pxToRem from "../../utils/pxToRem"
 
 export const Container = styled.h2`
   line-height: 1.5;
-  margin: 0 0 ${pxToRem(28)} 0;
-  font-weight: 800;
+  margin: 0 0 ${pxToRem(18)} 0;
+  font-weight: 700;
 
   ${(props) =>
     props.as === "h1" &&

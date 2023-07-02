@@ -1,5 +1,5 @@
 import React, { ReactNode, useState } from "react"
-import "@fontsource-variable/inter"
+import "./font"
 
 import ThemeContext from "./ThemeContext"
 import GlobalStyles from "./GlobalStyles"
