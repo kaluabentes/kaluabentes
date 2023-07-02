@@ -49,7 +49,7 @@ export const Large: Story = {
   },
 }
 
-export const isBlock: Story = {
+export const Block: Story = {
   args: {
     variant: "primary",
     children: "Action",
