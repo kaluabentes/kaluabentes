@@ -54,7 +54,6 @@ export const ContentItem = styled.div`
   & h1 {
     line-height: 1.2;
     margin: 0;
-    font-weight: 600;
   }
 
   & p {
