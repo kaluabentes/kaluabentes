@@ -13,6 +13,14 @@ const GlobalStyles = createGlobalStyle`
     font-family: ${(props) => props.theme.typography.fontFamily};
     color: ${(props) => props.theme.body.color};
   }
+
+  hr {
+    border-color: ${(props) => props.theme.separator.borderColor};
+    border-width: 1px;
+    outline: 0;
+    border-top: 0;
+    margin: 0;
+  }
 `
 
 export default GlobalStyles

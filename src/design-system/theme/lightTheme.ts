@@ -11,6 +11,9 @@ const lightTheme = {
   hero: {
     color: palette.secondary[600],
   },
+  separator: {
+    borderColor: palette.secondary[100],
+  },
   components: {
     button: buttonLightTheme,
   },

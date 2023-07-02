@@ -21,6 +21,7 @@ export const ContentBox = styled.div<{ $isReversed?: boolean }>`
     align-items: start;
     justify-content: start;
     gap: ${pxToRem(80)};
+    padding: ${pxToRem(80)} 0;
 
     & img {
       max-width: ${pxToRem(300)};

@@ -1,5 +1,6 @@
 "use client"
 
+import { ReactNode } from "react"
 import Avatar from "../Avatar"
 import Button from "../Button"
 import Heading from "../Heading"
@@ -12,8 +13,10 @@ interface HeroProps {
   buttonText: string
   imageSrc: string
   imageAlt: string
+  footerSlot?: ReactNode
   isReversed?: boolean
-  onButtonClick: () => void
+  headingLevel?: number
+  onButtonClick?: () => void
 }
 
 const Hero = ({
@@ -22,17 +25,22 @@ const Hero = ({
   buttonText,
   imageSrc,
   imageAlt,
+  footerSlot,
   isReversed = false,
+  headingLevel = 1,
   onButtonClick,
 }: HeroProps) => (
   <Container>
     <ContentBox $isReversed={isReversed}>
       <ContentItem>
-        <Heading level={1}>{headline}</Heading>
+        <Heading level={headingLevel}>{headline}</Heading>
         <Paragraph>{paragraph}</Paragraph>
-        <Button variant="primary" size="lg" onClick={onButtonClick}>
-          {buttonText}
-        </Button>
+        {onButtonClick && (
+          <Button variant="primary" size="lg" onClick={onButtonClick}>
+            {buttonText}
+          </Button>
+        )}
+        {footerSlot}
       </ContentItem>
       <Avatar src={imageSrc} alt={imageAlt} />
     </ContentBox>

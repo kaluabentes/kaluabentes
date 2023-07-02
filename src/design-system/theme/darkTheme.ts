@@ -11,6 +11,9 @@ const darkTheme = {
   hero: {
     color: "rgba(255, 255, 255, 0.7)",
   },
+  separator: {
+    borderColor: palette.secondary[50],
+  },
   components: {
     button: buttonDarkTheme,
   },

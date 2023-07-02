@@ -21,6 +21,7 @@ export const Container = styled.button<{
   border: 1px solid transparent;
   border-radius: ${pxToRem(6)};
   font-weight: 600;
+  line-height: 1;
 
   ${(props) =>
     props.$variant === "default" &&
