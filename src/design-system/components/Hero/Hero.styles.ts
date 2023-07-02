@@ -54,6 +54,7 @@ export const ContentItem = styled.div`
   & h1 {
     line-height: 1.2;
     margin: 0;
+    font-weight: 600;
   }
 
   & p {
@@ -74,6 +75,10 @@ export const ContentItem = styled.div`
     & h1 {
       line-height: 1;
       font-size: ${pxToRem(54)};
+    }
+
+    & p {
+      font-size: ${pxToRem(18)};
     }
   `)}
 `
