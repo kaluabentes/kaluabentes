@@ -1,4 +1,4 @@
-# 👀 About
+# About
 I'm Kaluã Bentes, a Frontend Developer from <b>Manaus, Brazil</b>
 <h3>Things I code with</h3>
 <p>
@@ -21,11 +21,11 @@ I'm Kaluã Bentes, a Frontend Developer from <b>Manaus, Brazil</b>
   <img alt="Tailwind CSS" src="https://img.shields.io/badge/tailwindcss-%2338B2AC.svg?style=flat-square&logo=tailwind-css&logoColor=white" />
 </p>
 
-# 🐱‍👤 Web Page
+# Web Page
 
 * [Personal Website](https://kaluabentes.vercel.app)
 
-# 📫 Contact me
+# Contact me
 
 Through any of the socials below.
 
