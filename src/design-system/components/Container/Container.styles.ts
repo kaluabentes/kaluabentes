@@ -23,7 +23,7 @@ export const BaseContainer = styled.div<{ $size?: ContainerProps["size"] }>`
   ${(props) =>
     props.$size === "lg" &&
     css`
-      max-width: ${pxToRem(1024)};
+      max-width: ${pxToRem(1124)};
     `}
 
   ${(props) =>

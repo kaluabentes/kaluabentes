@@ -1,5 +1,6 @@
-import queryLg from "@/design-system/utils/queryLg"
 import styled, { css } from "styled-components"
+
+import queryLg from "../../utils/queryLg"
 
 export const Image = styled.img`
   min-width: 200px;
