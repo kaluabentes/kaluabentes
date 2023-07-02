@@ -20,8 +20,8 @@ export const ContentBox = styled.div<{ $isReversed?: boolean }>`
     flex-direction: row;
     align-items: start;
     justify-content: start;
-    gap: ${pxToRem(80)};
-    padding: ${pxToRem(80)} 0;
+    gap: ${pxToRem(100)};
+    padding: ${pxToRem(100)} 0;
 
     & img {
       max-width: ${pxToRem(300)};
@@ -31,7 +31,7 @@ export const ContentBox = styled.div<{ $isReversed?: boolean }>`
   ${(props) =>
     props.$isReversed &&
     css`
-      flex-direction: column;
+      flex-direction: column-reverse;
 
       ${queryLg(css`
         flex-direction: row-reverse;

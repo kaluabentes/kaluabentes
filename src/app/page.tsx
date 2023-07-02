@@ -1,13 +1,10 @@
 import Container from "@/design-system/components/Container"
 
 import HomeHero from "./home/components/HomeHero"
-import AboutSection from "./home/components/AboutSection/AboutSection"
 
 const Home = () => (
-  <Container size="lg">
+  <Container size="xl">
     <HomeHero />
-    <hr />
-    <AboutSection />
   </Container>
 )
 
