@@ -72,6 +72,7 @@ export const ContentItem = styled.div`
 
     & h1 {
       line-height: 1;
+      font-size: ${pxToRem(54)};
     }
   `)}
 `

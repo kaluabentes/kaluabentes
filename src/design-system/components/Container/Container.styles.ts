@@ -6,6 +6,7 @@ import { ContainerProps } from "./Container"
 export const BaseContainer = styled.div<{ $size?: ContainerProps["size"] }>`
   margin: 0 auto;
   padding: 0 ${pxToRem(16)};
+  width: 100%;
 
   ${(props) =>
     props.$size === "sm" &&

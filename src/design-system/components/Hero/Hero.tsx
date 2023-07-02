@@ -1,3 +1,5 @@
+"use client"
+
 import Avatar from "../Avatar"
 import Button from "../Button"
 import Heading from "../Heading"

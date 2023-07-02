@@ -1,3 +1,6 @@
+import StyledComponentsRegistry from "@/design-system/utils/StyledComponentsRegistry"
+import RootProviders from "./providers"
+
 export const metadata = {
   title: "Kaluã Bentes - Desenvolvedor Frontend",
   description:
@@ -6,7 +9,11 @@ export const metadata = {
 
 const RootLayout = ({ children }: { children: React.ReactNode }) => (
   <html lang="en">
-    <body>{children}</body>
+    <body>
+      <StyledComponentsRegistry>
+        <RootProviders>{children}</RootProviders>
+      </StyledComponentsRegistry>
+    </body>
   </html>
 )
 

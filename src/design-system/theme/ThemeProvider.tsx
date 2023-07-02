@@ -1,27 +1,24 @@
-import React, { ReactNode, useState } from "react"
+"use client"
+
+import React, { ReactNode } from "react"
 import "./font"
 
-import ThemeContext from "./ThemeContext"
 import GlobalStyles from "./GlobalStyles"
-import lightTheme from "./lightTheme"
-import darkTheme from "./darkTheme"
+import { ThemeProvider as StyledThemeProvider } from "styled-components"
+import { useTheme } from "./ThemeContext"
 
 interface ThemeProviderProps {
   children: ReactNode
 }
 
 const ThemeProvider = ({ children }: ThemeProviderProps) => {
-  const [theme, setTheme] = useState(lightTheme)
-
-  const toggleTheme = () => {
-    setTheme(theme === lightTheme ? darkTheme : lightTheme)
-  }
+  const { theme } = useTheme()
 
   return (
-    <ThemeContext.Provider value={{ theme, toggleTheme }}>
+    <StyledThemeProvider theme={theme}>
       <GlobalStyles />
       {children}
-    </ThemeContext.Provider>
+    </StyledThemeProvider>
   )
 }
 
