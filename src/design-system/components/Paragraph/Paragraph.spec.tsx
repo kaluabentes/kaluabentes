@@ -6,23 +6,20 @@ import "jest-styled-components"
 
 import lightTheme from "@/design-system/theme/lightTheme"
 
-import Heading from "./Heading"
+import Paragraph from "./Paragraph"
 
 expect.extend(toHaveNoViolations)
 
 const Themed = () => (
   <ThemeProvider theme={lightTheme}>
-    <Heading>Action</Heading>
+    <Paragraph>Action</Paragraph>
   </ThemeProvider>
 )
 
-describe("Heading", () => {
+describe("Paragraph", () => {
   it("renders without problems", () => {
     render(<Themed />)
-
-    const heading = screen.getByRole("heading")
-
-    expect(heading).toHaveTextContent("Action")
+    expect(screen.getByText("Action")).toBeInTheDocument()
   })
 
   it("should not have basic accessibility issues", async () => {

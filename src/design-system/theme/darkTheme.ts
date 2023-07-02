@@ -4,6 +4,9 @@ import buttonDarkTheme from "../components/Button/buttonDarkTheme"
 
 const darkTheme = {
   ...base,
+  body: {
+    color: "white",
+  },
   components: {
     button: buttonDarkTheme,
   },

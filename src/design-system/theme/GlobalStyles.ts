@@ -10,8 +10,8 @@ const GlobalStyles = createGlobalStyle`
 
   body {
     padding: 0;
-    color: rgba(0, 0, 0, 0.9);
     font-family: ${(props) => props.theme.typography.fontFamily};
+    color: ${(props) => props.theme.body.color};
   }
 `
 

@@ -1,5 +1,6 @@
-import pxToRem from "../../utils/pxToRem"
 import styled, { css } from "styled-components"
+
+import pxToRem from "../../utils/pxToRem"
 
 export const Container = styled.h2`
   line-height: 1.5;
