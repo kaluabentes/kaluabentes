@@ -14,7 +14,7 @@ export const Container = styled.section`
 export const ContentBox = styled.div`
   display: flex;
   flex-direction: column;
-  gap: ${pxToRem(18)};
+  gap: ${pxToRem(32)};
 
   ${queryLg(css`
     flex-direction: row;
