@@ -10,7 +10,7 @@ import Button from "./Button"
 
 expect.extend(toHaveNoViolations)
 
-const ThemedButton = ({ onClick = () => {} }) => (
+const ThemedButton = ({ onClick = () => "something" }) => (
   <ThemeProvider theme={lightTheme}>
     <Button onClick={onClick}>Action</Button>
   </ThemeProvider>

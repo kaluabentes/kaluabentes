@@ -10,7 +10,7 @@ import Hero from "./Hero"
 
 expect.extend(toHaveNoViolations)
 
-const ThemedHero = ({ onButtonClick = () => {} }) => (
+const ThemedHero = ({ onButtonClick = () => "something" }) => (
   <ThemeProvider theme={lightTheme}>
     <Hero
       headline="Qui ex mollit exercitation mollit mollit nostrud ut labore proident nisi id deserunt commodo anim."

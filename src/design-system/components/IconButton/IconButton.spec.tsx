@@ -11,7 +11,7 @@ import IconButton from "./IconButton"
 
 expect.extend(toHaveNoViolations)
 
-const ThemedIconButton = ({ onClick = () => {} }) => (
+const ThemedIconButton = ({ onClick = () => "something" }) => (
   <ThemeProvider theme={lightTheme}>
     <IconButton onClick={onClick} label="Menu" icon={<BiMenu />} />
   </ThemeProvider>

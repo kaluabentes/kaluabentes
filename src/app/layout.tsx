@@ -1,6 +1,6 @@
 import StyledComponentsRegistry from "@/design-system/utils/StyledComponentsRegistry"
 import RootProviders from "./providers"
-import AppLayout from "@/layouts/AppLayout/AppLayout"
+import AppLayout from "@/layouts/AppLayout"
 
 export const metadata = {
   title: "Kaluã Bentes - Desenvolvedor Frontend",

@@ -1,10 +1,13 @@
 "use client"
 
-import { ReactNode } from "react"
+import { ReactNode, useState } from "react"
 import { BiCloudLightning, BiMenu, BiMoon, BiSun } from "react-icons/bi"
+import { useRouter } from "next/navigation"
 
 import AppBar from "../../design-system/components/AppBar"
 import IconButton from "../../design-system/components/IconButton/IconButton"
+import SideNav from "../../design-system/components/SideNav"
+import menuItems from "../../config/menuItems"
 import useTheme from "../../design-system/theme/useTheme"
 
 interface AppLayoutProps {
@@ -12,12 +15,18 @@ interface AppLayoutProps {
 }
 
 const AppLayout = ({ children }: AppLayoutProps) => {
+  const router = useRouter()
   const { theme, toggleTheme } = useTheme()
+  const [isSideNavOpen, setIsSideNavOpen] = useState(false)
 
   return (
     <>
       <AppBar>
-        <IconButton icon={<BiMenu />} label="Menu" />
+        <IconButton
+          onClick={() => setIsSideNavOpen(true)}
+          icon={<BiMenu />}
+          label="Menu"
+        />
         <IconButton icon={<BiCloudLightning />} label="Menu" />
         <IconButton
           onClick={() => toggleTheme()}
@@ -25,6 +34,12 @@ const AppLayout = ({ children }: AppLayoutProps) => {
           label="Light mode"
         />
       </AppBar>
+      <SideNav
+        isOpen={isSideNavOpen}
+        onClick={(path) => router.push(path)}
+        menuItems={menuItems}
+        onClose={() => setIsSideNavOpen(false)}
+      />
       {children}
     </>
   )

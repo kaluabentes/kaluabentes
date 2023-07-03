@@ -5,35 +5,36 @@ import "@testing-library/jest-dom"
 import "jest-styled-components"
 
 import lightTheme from "@/design-system/theme/lightTheme"
+import menuItems from "@/config/menuItems"
 
-import AppLayout from "./AppLayout"
+import SideNav from "./SideNav"
+import { ReactNode } from "react"
 
 expect.extend(toHaveNoViolations)
 
-const ThemedAppLayout = () => (
+const Themed = ({ onClick = (path: string) => path }) => (
   <ThemeProvider theme={lightTheme}>
-    <AppLayout>Content</AppLayout>
+    <SideNav onClick={onClick} menuItems={menuItems} />
   </ThemeProvider>
 )
 
-jest.mock("../../design-system/theme/useTheme", () => {
-  return jest.fn(() => ({
-    theme: {},
-    toggleTheme: () => {},
-  }))
+jest.mock("next/link", () => {
+  return ({ children }: { children: ReactNode }) => {
+    return children
+  }
 })
 
-describe("AppLayout", () => {
+describe("SideNav", () => {
   it("renders without problems", () => {
-    render(<ThemedAppLayout />)
+    render(<Themed />)
 
-    const content = screen.getByText("Content")
+    const link = screen.getAllByRole("listitem")
 
-    expect(content).toBeInTheDocument()
+    expect(link[0].innerHTML).toBe("Home")
   })
 
   it("should not have basic accessibility issues", async () => {
-    const { container } = render(<ThemedAppLayout />)
+    const { container } = render(<Themed />)
     const results = await axe(container)
     expect(results).toHaveNoViolations()
   })
