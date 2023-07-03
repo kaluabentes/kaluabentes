@@ -12,6 +12,7 @@ const GlobalStyles = createGlobalStyle`
     padding: 0;
     font-family: ${(props) => props.theme.typography.fontFamily};
     color: ${(props) => props.theme.body.color};
+    background-color: ${(props) => props.theme.body.backgroundColor};
   }
 
   hr {

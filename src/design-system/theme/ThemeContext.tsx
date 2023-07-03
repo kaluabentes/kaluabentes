@@ -1,11 +1,11 @@
-import { ReactNode, createContext, useContext, useState } from "react"
+import { ReactNode, createContext, useState } from "react"
 
 import lightTheme from "./lightTheme"
 import darkTheme from "./darkTheme"
 
 type Theme = typeof lightTheme
 
-interface ThemeContextValue {
+export interface ThemeContextValue {
   theme: Theme
   toggleTheme: () => void
 }
@@ -24,19 +24,6 @@ export const ThemeContextProvider = ({ children }: { children: ReactNode }) => {
       {children}
     </ThemeContext.Provider>
   )
-}
-
-export const useTheme = () => {
-  const { theme, toggleTheme } = useContext(ThemeContext) as ThemeContextValue
-
-  if (typeof theme === "undefined") {
-    throw new Error("Wrap the application with ThemeContextProvider")
-  }
-
-  return {
-    theme,
-    toggleTheme,
-  }
 }
 
 export default ThemeContext

@@ -1,5 +1,5 @@
 import { BiMenu } from "react-icons/bi"
-import { render, screen } from "@testing-library/react"
+import { fireEvent, render, screen, waitFor } from "@testing-library/react"
 import { axe, toHaveNoViolations } from "jest-axe"
 import { ThemeProvider } from "styled-components"
 import "@testing-library/jest-dom"
@@ -11,9 +11,9 @@ import IconButton from "./IconButton"
 
 expect.extend(toHaveNoViolations)
 
-const ThemedIconButton = () => (
+const ThemedIconButton = ({ onClick = () => {} }) => (
   <ThemeProvider theme={lightTheme}>
-    <IconButton label="Menu" icon={<BiMenu />} />
+    <IconButton onClick={onClick} label="Menu" icon={<BiMenu />} />
   </ThemeProvider>
 )
 
@@ -24,6 +24,17 @@ describe("IconButton", () => {
     const iconButton = screen.getByRole("button")
 
     expect(iconButton).toBeInTheDocument()
+  })
+
+  it("interacts without problems", async () => {
+    const handleClick = jest.fn()
+
+    render(<ThemedIconButton onClick={handleClick} />)
+
+    const button = screen.getByRole("button")
+    fireEvent.click(button)
+
+    await waitFor(() => expect(handleClick).toHaveBeenCalled())
   })
 
   it("should not have basic accessibility issues", async () => {

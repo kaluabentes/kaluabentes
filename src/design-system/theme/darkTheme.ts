@@ -5,8 +5,10 @@ import palette from "./palette"
 
 const darkTheme = {
   ...base,
+  name: "dark",
   body: {
     color: "white",
+    backgroundColor: palette.secondary[900],
   },
   hero: {
     color: "rgba(255, 255, 255, 0.7)",

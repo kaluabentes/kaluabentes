@@ -5,7 +5,7 @@ import "./font"
 
 import GlobalStyles from "./GlobalStyles"
 import { ThemeProvider as StyledThemeProvider } from "styled-components"
-import { useTheme } from "./ThemeContext"
+import useTheme from "./useTheme"
 
 interface ThemeProviderProps {
   children: ReactNode

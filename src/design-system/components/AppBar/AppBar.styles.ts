@@ -9,7 +9,7 @@ export const Container = styled.header`
 
   & button:nth-child(2) {
     font-size: ${pxToRem(42)};
-    color: ${(props) => props.theme.button.primary.background};
+    color: ${(props) => props.theme.button.primary.backgroundHover};
     padding: 0;
   }
 `

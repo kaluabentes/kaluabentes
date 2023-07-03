@@ -5,8 +5,10 @@ import palette from "./palette"
 
 const lightTheme = {
   ...base,
+  name: "light",
   body: {
     color: palette.secondary[900],
+    backgroundColor: "white",
   },
   hero: {
     color: palette.secondary[600],

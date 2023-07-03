@@ -16,6 +16,13 @@ const ThemedAppLayout = () => (
   </ThemeProvider>
 )
 
+jest.mock("../../design-system/theme/useTheme", () => {
+  return jest.fn(() => ({
+    theme: {},
+    toggleTheme: () => {},
+  }))
+})
+
 describe("AppLayout", () => {
   it("renders without problems", () => {
     render(<ThemedAppLayout />)
