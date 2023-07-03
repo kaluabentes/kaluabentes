@@ -14,9 +14,11 @@ const lightTheme = {
   separator: {
     borderColor: palette.secondary[100],
   },
-  components: {
-    button: buttonLightTheme,
+  iconButton: {
+    color: palette.secondary[600],
+    colorHover: palette.secondary[900],
   },
+  button: buttonLightTheme,
 }
 
 export default lightTheme

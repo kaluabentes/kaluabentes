@@ -26,38 +26,34 @@ export const Container = styled.button<{
   ${(props) =>
     props.$variant === "default" &&
     css`
-      background-color: ${props.theme.components.button.default.background};
-      border-color: ${props.theme.components.button.default.borderColor};
-      color: ${props.theme.components.button.default.color};
+      background-color: ${props.theme.button.default.background};
+      border-color: ${props.theme.button.default.borderColor};
+      color: ${props.theme.button.default.color};
 
       &:hover {
-        background-color: ${props.theme.components.button.default
-          .backgroundHover};
+        background-color: ${props.theme.button.default.backgroundHover};
       }
 
       &:active {
-        background-color: ${props.theme.components.button.default
-          .backgroundActive};
+        background-color: ${props.theme.button.default.backgroundActive};
       }
     `}
 
   ${(props) =>
     props.$variant === "primary" &&
     css`
-      background-color: ${props.theme.components.button.primary.background};
-      border-color: ${props.theme.components.button.primary.borderColor};
-      color: ${props.theme.components.button.primary.color};
+      background-color: ${props.theme.button.primary.background};
+      border-color: ${props.theme.button.primary.borderColor};
+      color: ${props.theme.button.primary.color};
 
       &:hover {
-        background-color: ${props.theme.components.button.primary
-          .backgroundHover};
-        border-color: ${props.theme.components.button.primary.backgroundHover};
+        background-color: ${props.theme.button.primary.backgroundHover};
+        border-color: ${props.theme.button.primary.backgroundHover};
       }
 
       &:active {
-        background-color: ${props.theme.components.button.primary
-          .backgroundActive};
-        border-color: ${props.theme.components.button.primary.backgroundActive};
+        background-color: ${props.theme.button.primary.backgroundActive};
+        border-color: ${props.theme.button.primary.backgroundActive};
       }
     `}
 

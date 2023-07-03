@@ -1,3 +1,4 @@
+import { BiMenu } from "react-icons/bi"
 import { render, screen } from "@testing-library/react"
 import { axe, toHaveNoViolations } from "jest-axe"
 import { ThemeProvider } from "styled-components"
@@ -6,27 +7,27 @@ import "jest-styled-components"
 
 import lightTheme from "@/design-system/theme/lightTheme"
 
-import AppBar from "./AppBar"
+import IconButton from "./IconButton"
 
 expect.extend(toHaveNoViolations)
 
-const ThemedAppBar = () => (
+const ThemedIconButton = () => (
   <ThemeProvider theme={lightTheme}>
-    <AppBar>Action</AppBar>
+    <IconButton label="Menu" icon={<BiMenu />} />
   </ThemeProvider>
 )
 
-describe("AppBar", () => {
+describe("IconButton", () => {
   it("renders without problems", () => {
-    render(<ThemedAppBar />)
+    render(<ThemedIconButton />)
 
-    const appbar = screen.getByRole("header")
+    const iconButton = screen.getByRole("button")
 
-    expect(appbar).toHaveTextContent("Action")
+    expect(iconButton).toBeInTheDocument()
   })
 
   it("should not have basic accessibility issues", async () => {
-    const { container } = render(<ThemedAppBar />)
+    const { container } = render(<ThemedIconButton />)
     const results = await axe(container)
     expect(results).toHaveNoViolations()
   })

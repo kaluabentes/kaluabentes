@@ -14,9 +14,11 @@ const darkTheme = {
   separator: {
     borderColor: palette.secondary[50],
   },
-  components: {
-    button: buttonDarkTheme,
+  iconButton: {
+    color: "rgba(255, 255, 255, 0.7)",
+    colorHover: "rgba(255, 255, 255, 0.8)",
   },
+  button: buttonDarkTheme,
 }
 
 export default darkTheme

@@ -1,5 +1,6 @@
 import StyledComponentsRegistry from "@/design-system/utils/StyledComponentsRegistry"
 import RootProviders from "./providers"
+import AppLayout from "@/layouts/AppLayout/AppLayout"
 
 export const metadata = {
   title: "Kaluã Bentes - Desenvolvedor Frontend",
@@ -11,7 +12,9 @@ const RootLayout = ({ children }: { children: React.ReactNode }) => (
   <html lang="en">
     <body>
       <StyledComponentsRegistry>
-        <RootProviders>{children}</RootProviders>
+        <RootProviders>
+          <AppLayout>{children}</AppLayout>
+        </RootProviders>
       </StyledComponentsRegistry>
     </body>
   </html>
