@@ -34,7 +34,7 @@ const Hero = ({
     <ContentBox $isReversed={isReversed}>
       <ContentItem>
         <Heading level={headingLevel}>{headline}</Heading>
-        <Paragraph>{paragraph}</Paragraph>
+        <Paragraph variant="muted">{paragraph}</Paragraph>
         {onButtonClick && (
           <Button variant="primary" size="lg" onClick={onButtonClick}>
             {buttonText}

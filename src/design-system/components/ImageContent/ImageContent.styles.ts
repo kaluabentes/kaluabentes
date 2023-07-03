@@ -3,7 +3,13 @@ import styled, { css } from "styled-components"
 import pxToRem from "../../utils/pxToRem"
 import queryLg from "../../utils/queryLg"
 
-export const Container = styled.section``
+export const Container = styled.section`
+  padding: ${pxToRem(32)} 0;
+
+  ${queryLg(css`
+    padding: ${pxToRem(100)} 0;
+  `)}
+`
 
 export const ContentBox = styled.div`
   display: flex;

@@ -1,12 +1,20 @@
 import { ReactNode } from "react"
 import { Container } from "./Paragraph.styles"
 
-interface ParagraphProps {
+export interface ParagraphProps {
   children: ReactNode
+  variant?: "default" | "muted"
+  isBold?: boolean
 }
 
-const Paragraph = ({ children }: ParagraphProps) => (
-  <Container>{children}</Container>
+const Paragraph = ({
+  children,
+  variant = "default",
+  isBold = false,
+}: ParagraphProps) => (
+  <Container $variant={variant} $isBold={isBold}>
+    {children}
+  </Container>
 )
 
 export default Paragraph

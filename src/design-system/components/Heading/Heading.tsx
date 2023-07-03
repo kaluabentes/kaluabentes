@@ -6,7 +6,6 @@ const asHeading: { [key: number]: string } = {
   2: "h2",
   3: "h3",
   4: "h4",
-  5: "h5",
 }
 
 interface HeadingProps {

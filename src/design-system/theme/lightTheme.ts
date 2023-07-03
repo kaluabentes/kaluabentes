@@ -9,8 +9,10 @@ const lightTheme = {
     color: palette.secondary[900],
     backgroundColor: "white",
   },
-  hero: {
-    color: palette.secondary[600],
+  paragraph: {
+    muted: {
+      color: palette.secondary[600],
+    },
   },
   separator: {
     borderColor: palette.secondary[100],

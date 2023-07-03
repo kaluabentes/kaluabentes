@@ -19,7 +19,6 @@ export const Default: Story = {
       <Heading level={2}>A Visual Type Scale</Heading>
       <Heading level={3}>A Visual Type Scale</Heading>
       <Heading level={4}>A Visual Type Scale</Heading>
-      <Heading level={5}>A Visual Type Scale</Heading>
     </>
   ),
 }
@@ -62,15 +61,6 @@ export const Document: Story = {
         et.
       </Paragraph>
       <Heading level={4}>A Visual Type Scale</Heading>
-      <Paragraph>
-        Aute magna eu nulla non laborum. Ad adipisicing est duis pariatur veniam
-        laborum. Qui exercitation exercitation voluptate tempor adipisicing
-        officia cillum. Laborum ex labore eu consectetur laboris amet minim esse
-        sunt eiusmod commodo mollit id. Qui sit nostrud magna enim sit dolor
-        veniam quis voluptate in cillum aute Lorem. Cupidatat elit eiusmod ut
-        et.
-      </Paragraph>
-      <Heading level={5}>A Visual Type Scale</Heading>
       <Paragraph>
         Aute magna eu nulla non laborum. Ad adipisicing est duis pariatur veniam
         laborum. Qui exercitation exercitation voluptate tempor adipisicing

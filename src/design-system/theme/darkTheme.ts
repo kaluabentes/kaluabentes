@@ -9,8 +9,10 @@ const darkTheme = {
     color: "white",
     backgroundColor: palette.secondary[900],
   },
-  hero: {
-    color: "rgba(255, 255, 255, 0.7)",
+  paragraph: {
+    muted: {
+      color: "rgba(255, 255, 255, 0.7)",
+    },
   },
   separator: {
     borderColor: palette.secondary[50],

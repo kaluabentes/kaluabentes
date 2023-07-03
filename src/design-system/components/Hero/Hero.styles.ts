@@ -57,7 +57,6 @@ export const ContentItem = styled.div`
   }
 
   & p {
-    color: ${(props) => props.theme.hero.color};
     font-weight: 500;
     transform: translateY(-4px);
   }
