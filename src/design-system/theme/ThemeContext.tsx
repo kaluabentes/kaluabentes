@@ -10,7 +10,7 @@ export interface ThemeContextValue {
   toggleTheme: () => void
 }
 
-const ThemeContext = createContext<ThemeContextValue | null>(null)
+export const ThemeContext = createContext<ThemeContextValue | null>(null)
 
 export const ThemeContextProvider = ({ children }: { children: ReactNode }) => {
   const [theme, setTheme] = useState(lightTheme)

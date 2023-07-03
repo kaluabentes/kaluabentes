@@ -1,7 +1,6 @@
 import { useContext } from "react"
-import { ThemeContext } from "styled-components"
 
-import { ThemeContextValue } from "./ThemeContext"
+import { ThemeContextValue, ThemeContext } from "./ThemeContext"
 
 const useTheme = () => {
   const { theme, toggleTheme } = useContext(ThemeContext) as ThemeContextValue
