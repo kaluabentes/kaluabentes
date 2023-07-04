@@ -9,7 +9,6 @@ export const Container = styled.p<{
 }>`
   margin: 0 0 ${pxToRem(32)} 0;
   line-height: 1.75;
-  font-weight: 500;
 
   &:last-of-type {
     margin-bottom: 0;
