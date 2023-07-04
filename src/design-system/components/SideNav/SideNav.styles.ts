@@ -63,9 +63,10 @@ export const Header = styled.div`
 
 export const Title = styled.h3`
   margin: 0;
-  font-weight: 600;
+  font-weight: 700;
   padding: ${pxToRem(16)};
   text-transform: uppercase;
   font-size: ${pxToRem(12)};
-  letter-spacing: 2px;
+  letter-spacing: 1.5px;
+  color: ${(props) => props.theme.paragraph.muted.color};
 `

@@ -1,6 +1,6 @@
-# About
-I'm Kaluã Bentes, a Frontend Developer from <b>Manaus, Brazil</b>
-<h3>Things I code with</h3>
+# Sobre
+Olá, me chamo Kaluã Bentes, e sou Frontend Developer de <b>Manaus, Brazil</b>
+<h3>Tecnologias</h3>
 <p>
   <img alt="React" src="https://img.shields.io/badge/-React-45b8d8?style=flat-square&logo=react&logoColor=white" />
   <img alt="React Native" src="https://img.shields.io/badge/react_native-%2320232a.svg?style=flat-quare&logo=react&logoColor=%2361DAFB" />
@@ -21,13 +21,11 @@ I'm Kaluã Bentes, a Frontend Developer from <b>Manaus, Brazil</b>
   <img alt="Tailwind CSS" src="https://img.shields.io/badge/tailwindcss-%2338B2AC.svg?style=flat-square&logo=tailwind-css&logoColor=white" />
 </p>
 
-# Web Page
+# Site pessoal
 
-* [Personal Website](https://kaluabentes.vercel.app)
+* [[Personal Website](https://kaluabentes.vercel.app)](https://kaluabentes.vercel.app)
 
-# Contact me
-
-Through any of the socials below.
+# Contato
 
 <p><a href="https://www.linkedin.com/in/kalua-bentes/" target="_blank"><img alt="LinkedIn" src="https://img.shields.io/badge/linkedin-%230077B5.svg?&style=for-the-badge&logo=linkedin&logoColor=white" /></a>
 </p>

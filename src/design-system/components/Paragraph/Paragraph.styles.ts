@@ -27,7 +27,7 @@ export const Container = styled.p<{
       color: ${(props) => props.theme.paragraph.muted.color};
     `}
 
-    ${(props) =>
+  ${(props) =>
     props.$isBold &&
     css`
       font-weight: 600;
