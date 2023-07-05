@@ -1,6 +1,7 @@
 import {
   SiCss3,
   SiCypress,
+  SiEslint,
   SiGraphql,
   SiHtml5,
   SiJamstack,
@@ -69,6 +70,10 @@ const techItems: TechIconProps[] = [
   {
     icon: <SiStorybook aria-hidden />,
     name: "storybook",
+  },
+  {
+    icon: <SiEslint aria-hidden />,
+    name: "eslint",
   },
   {
     icon: <SiJest aria-hidden />,

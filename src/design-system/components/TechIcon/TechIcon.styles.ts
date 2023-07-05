@@ -134,6 +134,11 @@ export const Icon = styled.button<{ $name: TechIconProps["name"] }>`
           background-color: #ff4785;
           color: white;
         `
+      case "eslint":
+        return css`
+          background-color: #4b32c3;
+          color: white;
+        `
     }
   }}
 `
