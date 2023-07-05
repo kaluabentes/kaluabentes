@@ -1,11 +1,6 @@
-import styled, { css } from "styled-components"
-
-import queryLg from "@/design-system/utils/queryLg"
+import styled from "styled-components"
 
 export const Main = styled.main`
   margin-top: 60px;
-
-  ${queryLg(css`
-    padding-top: 42px;
-  `)}
+  padding-top: 42px;
 `
