@@ -38,6 +38,16 @@ const AboutSection = () => (
           >
             GitHub
           </Button>
+          <Button
+            onClick={() =>
+              window.open(
+                "https://github.com/kaluabentes/kaluabentes",
+                "_blank"
+              )
+            }
+          >
+            Source Code
+          </Button>
         </ButtonBox>
       </>
     }

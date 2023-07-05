@@ -23,7 +23,7 @@ Olá, me chamo Kaluã Bentes, e sou Frontend Developer de <b>Manaus, Brazil</b>
 
 # Site pessoal
 
-* [[Personal Website](https://kaluabentes.vercel.app)](https://kaluabentes.vercel.app)
+* [Personal Website](https://kaluabentes.vercel.app)
 
 # Contato
 

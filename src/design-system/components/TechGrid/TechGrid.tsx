@@ -4,10 +4,10 @@ import { ReactNode } from "react"
 
 import Heading from "../Heading"
 import TechIcon from "../TechIcon"
+import { TechIconProps } from "../TechIcon/TechIcon"
+import createKey from "../../utils/createKey"
 
 import { Container, Grid } from "./TechGrid.styles"
-import createKey from "../../../utils/react/createKey"
-import { TechIconProps } from "../TechIcon/TechIcon"
 
 interface TechGridProps {
   title: string
