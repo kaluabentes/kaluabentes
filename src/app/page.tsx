@@ -1,3 +1,5 @@
+import { Metadata } from "next"
+
 import Container from "@/design-system/components/Container"
 import FeatureGrid from "@/design-system/components/FeatureGrid/FeatureGrid"
 import TechGrid from "@/design-system/components/TechGrid"
@@ -6,6 +8,15 @@ import featureItems from "@/config/featureItems"
 
 import HomeHero from "./home/components/HomeHero"
 import AboutSection from "./home/components/AboutSection"
+
+export const metadata: Metadata = {
+  title: "Kaluã Bentes - Desenvolvedor Frontend",
+  description:
+    "Com 10 anos de experiência na indústria de desenvolvimento de software, possuo um sólido conhecimento em tecnologias front-end, incluindo HTML5, CSS3, JavaScript e frameworks modernos como React e Vue.js.",
+  openGraph: {
+    images: ["https://kaluabentes.vercel.app/screenshot.png"],
+  },
+}
 
 const Home = () => (
   <Container size="lg">
