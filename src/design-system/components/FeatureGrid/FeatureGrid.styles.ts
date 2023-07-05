@@ -18,6 +18,7 @@ export const Container = styled.section`
 
 export const Grid = styled.div`
   display: grid;
+  gap: 16px;
 
   ${queryLg(css`
     grid-template-columns: repeat(3, 1fr);

@@ -10,7 +10,8 @@ export const Container = styled.header<{
   justify-content: space-between;
   background: white;
   z-index: 100;
-  transition: 0.3s ease;
+  transition: 0.3s ease box-shadow;
+  background: ${(props) => props.theme.appBar.backgroundColor};
 
   & button:nth-child(2) {
     font-size: ${pxToRem(42)};

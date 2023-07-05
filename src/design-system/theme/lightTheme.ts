@@ -9,6 +9,9 @@ const lightTheme = {
     color: palette.secondary[900],
     backgroundColor: "white",
   },
+  appBar: {
+    backgroundColor: "white",
+  },
   paragraph: {
     muted: {
       color: palette.secondary[600],

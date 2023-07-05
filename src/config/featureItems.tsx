@@ -23,7 +23,7 @@ const featureItems = [
   {
     title: "PWA",
     description:
-      "Construo progressive web apps para oferecer uma experiência mais nativa.",
+      "Construo progressive web apps que oferecem uma experiência mais nativa.",
     icon: <BiMobileAlt />,
   },
   {

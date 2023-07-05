@@ -9,6 +9,9 @@ const darkTheme = {
     color: "white",
     backgroundColor: palette.secondary[900],
   },
+  appBar: {
+    backgroundColor: palette.secondary[900],
+  },
   paragraph: {
     muted: {
       color: "rgba(255, 255, 255, 0.7)",
