@@ -31,8 +31,8 @@ export const Icon = styled.button<{ $name: TechIconProps["name"] }>`
         `
       case "javascript":
         return css`
-          background-color: #f7df1e;
-          color: black;
+          background-color: black;
+          color: #f7df1e;
         `
       case "typescript":
         return css`
