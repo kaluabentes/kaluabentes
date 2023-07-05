@@ -14,6 +14,7 @@ import {
   SiPwa,
   SiReact,
   SiRedux,
+  SiStorybook,
   SiStrapi,
   SiStyledcomponents,
   SiTestinglibrary,
@@ -64,6 +65,10 @@ const techItems: TechIconProps[] = [
   {
     icon: <SiStyledcomponents aria-hidden />,
     name: "styled-components",
+  },
+  {
+    icon: <SiStorybook aria-hidden />,
+    name: "storybook",
   },
   {
     icon: <SiJest aria-hidden />,

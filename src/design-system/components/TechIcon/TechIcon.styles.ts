@@ -6,7 +6,7 @@ import { TechIconProps } from "./TechIcon"
 export const Icon = styled.button<{ $name: TechIconProps["name"] }>`
   line-height: 1;
   color: ${(props) => props.theme.button.primary.background};
-  width: 60px;
+  width: 100%;
   height: 60px;
   font-size: ${pxToRem(42)};
   display: flex;
@@ -127,6 +127,11 @@ export const Icon = styled.button<{ $name: TechIconProps["name"] }>`
       case "strapi":
         return css`
           background-color: #4945ff;
+          color: white;
+        `
+      case "storybook":
+        return css`
+          background-color: #ff4785;
           color: white;
         `
     }

@@ -26,6 +26,7 @@ export interface TechIconProps {
     | "strapi"
     | "vercel"
     | "chatgpt"
+    | "storybook"
 }
 
 const TechIcon = ({ icon, name }: TechIconProps) => (
