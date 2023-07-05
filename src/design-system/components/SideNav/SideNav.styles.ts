@@ -41,7 +41,7 @@ export const ListItem = styled.li`
     border: 0;
     padding: ${pxToRem(16)};
     border-bottom: 1px solid ${(props) => props.theme.sideNav.borderColor};
-    font-weight: 600;
+    font-weight: 500;
     font-size: ${pxToRem(14)};
     cursor: pointer;
     color: inherit;

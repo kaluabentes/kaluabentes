@@ -14,7 +14,7 @@ const AboutSection = () => (
         <Heading level={3}>
           Melhorando o mundo uma linha de código de cada vez
         </Heading>
-        <Paragraph variant="muted">
+        <Paragraph>
           Com 10 anos de experiência na indústria de desenvolvimento de
           software, possuo um sólido conhecimento em tecnologias front-end,
           incluindo HTML5, CSS3, JavaScript e frameworks modernos como React e
