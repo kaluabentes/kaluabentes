@@ -3,7 +3,7 @@ import styled from "styled-components"
 import pxToRem from "../../utils/pxToRem"
 
 export const Container = styled.section`
-  padding: ${pxToRem(80)} 0;
+  padding: ${pxToRem(84)} 0;
 `
 
 export const Grid = styled.div`

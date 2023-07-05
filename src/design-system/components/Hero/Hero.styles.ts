@@ -8,7 +8,7 @@ export const Container = styled.article<{ $isReversed?: boolean }>`
   align-items: center;
   justify-content: center;
   gap: ${pxToRem(22)};
-  padding: ${pxToRem(32)} 0;
+  padding: ${pxToRem(84)} 0;
 
   & img {
     max-width: ${pxToRem(200)};
@@ -19,7 +19,6 @@ export const Container = styled.article<{ $isReversed?: boolean }>`
     align-items: start;
     justify-content: start;
     gap: ${pxToRem(100)};
-    padding: ${pxToRem(100)} 0;
 
     & img {
       max-width: ${pxToRem(300)};

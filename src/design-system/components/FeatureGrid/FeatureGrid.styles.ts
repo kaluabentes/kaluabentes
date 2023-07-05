@@ -4,7 +4,7 @@ import pxToRem from "../../utils/pxToRem"
 import queryLg from "../../utils/queryLg"
 
 export const Container = styled.section`
-  padding: ${pxToRem(32)} 0;
+  padding: ${pxToRem(84)} 0;
 
   & h2 {
     margin-bottom: ${pxToRem(16)};

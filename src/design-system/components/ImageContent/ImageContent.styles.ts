@@ -4,11 +4,7 @@ import pxToRem from "../../utils/pxToRem"
 import queryLg from "../../utils/queryLg"
 
 export const Container = styled.section`
-  padding: ${pxToRem(32)} 0;
-
-  ${queryLg(css`
-    padding: ${pxToRem(100)} 0;
-  `)}
+  padding: ${pxToRem(84)} 0;
 `
 
 export const ContentBox = styled.div`
