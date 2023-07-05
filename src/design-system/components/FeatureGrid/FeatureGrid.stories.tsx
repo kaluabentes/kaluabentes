@@ -1,3 +1,4 @@
+import type { Meta, StoryObj } from "@storybook/react"
 import {
   BiAtom,
   BiCodeBlock,
@@ -7,16 +8,19 @@ import {
 } from "react-icons/bi"
 import { SiJamstack } from "react-icons/si"
 
-import Container from "@/design-system/components/Container"
-import FeatureGrid from "@/design-system/components/FeatureGrid/FeatureGrid"
+import FeatureGrid from "./FeatureGrid"
 
-import HomeHero from "./home/components/HomeHero"
-import AboutSection from "./home/components/AboutSection"
+const meta: Meta<typeof FeatureGrid> = {
+  title: "components/FeatureGrid",
+  component: FeatureGrid,
+  tags: ["autodocs"],
+}
 
-const Home = () => (
-  <Container size="lg">
-    <HomeHero />
-    <AboutSection />
+export default meta
+type Story = StoryObj<typeof FeatureGrid>
+
+export const Default: Story = {
+  render: () => (
     <FeatureGrid
       title="Diferenciais"
       paragraph="Algumas das habilidades que venho acumulando com o passar dos anos."
@@ -59,7 +63,5 @@ const Home = () => (
         },
       ]}
     />
-  </Container>
-)
-
-export default Home
+  ),
+}

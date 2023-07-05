@@ -6,9 +6,11 @@ import { ParagraphProps } from "./Paragraph"
 export const Container = styled.p<{
   $variant?: ParagraphProps["variant"]
   $isBold?: boolean
+  $align?: "left" | "center" | "right"
 }>`
   margin: 0 0 ${pxToRem(32)} 0;
   line-height: 1.75;
+  text-align: ${(props) => props.$align};
 
   &:last-of-type {
     margin-bottom: 0;

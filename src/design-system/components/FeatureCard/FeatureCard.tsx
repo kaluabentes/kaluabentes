@@ -14,8 +14,12 @@ interface FeatureCardProps {
 const FeatureCard = ({ title, description, icon }: FeatureCardProps) => (
   <Container>
     <Icon>{icon}</Icon>
-    <Heading level={4}>{title}</Heading>
-    <Paragraph variant="muted">{description}</Paragraph>
+    <Heading level={3} align="center">
+      {title}
+    </Heading>
+    <Paragraph variant="muted" align="center">
+      {description}
+    </Paragraph>
   </Container>
 )
 

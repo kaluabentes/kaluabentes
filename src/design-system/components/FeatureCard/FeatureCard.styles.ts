@@ -7,10 +7,14 @@ export const Container = styled.div`
   flex-direction: column;
   align-items: center;
   gap: ${pxToRem(12)};
-  text-align: center;
+  padding: ${pxToRem(16)};
 
   & * {
-    margin: 0;
+    margin: 0 !important;
+  }
+
+  & h3 {
+    font-size: ${pxToRem(20)};
   }
 `
 

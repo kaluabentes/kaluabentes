@@ -11,10 +11,13 @@ const asHeading: { [key: number]: string } = {
 interface HeadingProps {
   level?: number
   children: ReactNode
+  align?: "left" | "center" | "right"
 }
 
-const Heading = ({ level = 2, children }: HeadingProps) => (
-  <Container as={asHeading[level]}>{children}</Container>
+const Heading = ({ level = 2, children, align = "left" }: HeadingProps) => (
+  <Container as={asHeading[level]} $align={align}>
+    {children}
+  </Container>
 )
 
 export default Heading
