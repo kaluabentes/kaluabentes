@@ -2,12 +2,14 @@ import styled from "styled-components"
 
 import pxToRem from "../../utils/pxToRem"
 
-export const Container = styled.div`
+export const Container = styled.article`
   display: flex;
   flex-direction: column;
   align-items: center;
   gap: ${pxToRem(12)};
   padding: ${pxToRem(16)};
+  border-radius: ${pxToRem(12)};
+  transition: 0.3s ease-in;
 
   & * {
     margin: 0 !important;
@@ -15,6 +17,10 @@ export const Container = styled.div`
 
   & h3 {
     font-size: ${pxToRem(20)};
+  }
+
+  &:hover {
+    box-shadow: 0px 0px 15px 1px rgba(0, 0, 0, 0.1);
   }
 `
 

@@ -3,7 +3,7 @@ import styled, { css } from "styled-components"
 import pxToRem from "../../utils/pxToRem"
 
 export const Container = styled.nav<{ $isOpen?: boolean }>`
-  z-index: 100;
+  z-index: 200;
   height: 100vh;
   box-shadow: 1px 0px 3px 1px rgba(0, 0, 0, 0.1);
   max-width: 260px;

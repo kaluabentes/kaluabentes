@@ -9,6 +9,7 @@ import IconButton from "../../design-system/components/IconButton/IconButton"
 import SideNav from "../../design-system/components/SideNav"
 import menuItems from "../../config/menuItems"
 import useTheme from "../../design-system/theme/useTheme"
+import { Main } from "./AppLayout.styles"
 
 interface AppLayoutProps {
   children: ReactNode
@@ -21,7 +22,7 @@ const AppLayout = ({ children }: AppLayoutProps) => {
 
   return (
     <>
-      <AppBar>
+      <AppBar isFixed>
         <IconButton
           onClick={() => setIsSideNavOpen(true)}
           icon={<BiMenu />}
@@ -40,7 +41,7 @@ const AppLayout = ({ children }: AppLayoutProps) => {
         menuItems={menuItems}
         onClose={() => setIsSideNavOpen(false)}
       />
-      {children}
+      <Main>{children}</Main>
     </>
   )
 }

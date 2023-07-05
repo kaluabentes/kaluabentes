@@ -2,9 +2,7 @@ import queryLg from "../../utils/queryLg"
 import pxToRem from "../../utils/pxToRem"
 import styled, { css } from "styled-components"
 
-export const Container = styled.article``
-
-export const ContentBox = styled.div<{ $isReversed?: boolean }>`
+export const Container = styled.article<{ $isReversed?: boolean }>`
   display: flex;
   flex-direction: column-reverse;
   align-items: center;
