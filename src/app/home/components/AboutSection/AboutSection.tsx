@@ -8,7 +8,7 @@ import { ButtonBox } from "./AboutSection.styles"
 
 const AboutSection = () => (
   <ImageContent
-    title="Sobre"
+    title="Sobre mim"
     content={
       <>
         <Heading level={3}>
