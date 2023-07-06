@@ -1,7 +1,5 @@
 "use client"
 
-import { ReactNode } from "react"
-
 import Heading from "../Heading"
 import TechIcon from "../TechIcon"
 import { TechIconProps } from "../TechIcon/TechIcon"
@@ -11,10 +9,7 @@ import { Container, Grid } from "./TechGrid.styles"
 
 interface TechGridProps {
   title: string
-  items: {
-    icon: ReactNode
-    name: TechIconProps["name"]
-  }[]
+  items: TechIconProps[]
 }
 
 const TechGrid = ({ title, items }: TechGridProps) => (
@@ -24,7 +19,12 @@ const TechGrid = ({ title, items }: TechGridProps) => (
     </Heading>
     <Grid>
       {items.map((item, index) => (
-        <TechIcon key={createKey(index)} name={item.name} icon={item.icon} />
+        <TechIcon
+          key={createKey(index)}
+          label={item.label}
+          name={item.name}
+          icon={item.icon}
+        />
       ))}
     </Grid>
   </Container>

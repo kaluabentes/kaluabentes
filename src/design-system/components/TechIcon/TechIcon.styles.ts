@@ -3,10 +3,10 @@ import styled, { css } from "styled-components"
 import pxToRem from "../../utils/pxToRem"
 import { TechIconProps } from "./TechIcon"
 
-export const Icon = styled.button<{ $name: TechIconProps["name"] }>`
+export const Icon = styled.div<{ $name: TechIconProps["name"] }>`
   line-height: 1;
   color: ${(props) => props.theme.button.primary.background};
-  width: 100%;
+  width: 60px;
   height: 60px;
   font-size: ${pxToRem(42)};
   display: flex;
@@ -14,7 +14,7 @@ export const Icon = styled.button<{ $name: TechIconProps["name"] }>`
   align-items: center;
   border-radius: ${pxToRem(8)};
   border: 0;
-  outline 0;
+  outline: 0;
   background: transparent;
 
   ${(props) => {
@@ -143,6 +143,11 @@ export const Icon = styled.button<{ $name: TechIconProps["name"] }>`
         return css`
           background-color: #5e8e3e;
           color: white;
+        `
+      case "react-native":
+        return css`
+          background-color: #222222;
+          color: #02dafa;
         `
     }
   }}

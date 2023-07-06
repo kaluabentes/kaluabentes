@@ -16,5 +16,6 @@ export const Default: Story = {
   args: {
     icon: <SiNextdotjs />,
     name: "next",
+    label: "Next.js",
   },
 }

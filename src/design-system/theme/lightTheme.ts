@@ -5,12 +5,28 @@ import palette from "./palette"
 const lightTheme = {
   ...base,
   name: "light",
+  appBar: {
+    backgroundColor: "white",
+  },
   body: {
     color: palette.secondary[900],
     backgroundColor: "white",
   },
-  appBar: {
-    backgroundColor: "white",
+  button: {
+    primary: {
+      background: palette.primary[500],
+      backgroundHover: palette.primary[700],
+      backgroundActive: palette.primary[900],
+      borderColor: palette.primary[500],
+      color: "white",
+    },
+    default: {
+      background: "white",
+      backgroundHover: palette.secondary[50],
+      backgroundActive: palette.secondary[200],
+      borderColor: palette.secondary[300],
+      color: palette.secondary[800],
+    },
   },
   paragraph: {
     muted: {
@@ -28,21 +44,9 @@ const lightTheme = {
     backgroundColor: "white",
     borderColor: palette.secondary[100],
   },
-  button: {
-    primary: {
-      background: palette.primary[500],
-      backgroundHover: palette.primary[700],
-      backgroundActive: palette.primary[900],
-      borderColor: palette.primary[500],
-      color: "white",
-    },
-    default: {
-      background: "white",
-      backgroundHover: palette.secondary[50],
-      backgroundActive: palette.secondary[200],
-      borderColor: palette.secondary[300],
-      color: palette.secondary[800],
-    },
+  tooltip: {
+    background: palette.secondary[800],
+    color: "white",
   },
 }
 

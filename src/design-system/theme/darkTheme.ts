@@ -5,28 +5,12 @@ import palette from "./palette"
 const darkTheme = {
   ...base,
   name: "dark",
-  body: {
-    color: "white",
-    backgroundColor: palette.secondary[900],
-  },
   appBar: {
     backgroundColor: palette.secondary[900],
   },
-  paragraph: {
-    muted: {
-      color: "rgba(255, 255, 255, 0.7)",
-    },
-  },
-  separator: {
-    borderColor: palette.secondary[50],
-  },
-  iconButton: {
-    color: "rgba(255, 255, 255, 0.7)",
-    colorHover: "rgba(255, 255, 255, 0.8)",
-  },
-  sideNav: {
-    backgroundColor: palette.secondary[800],
-    borderColor: palette.secondary[700],
+  body: {
+    color: "white",
+    backgroundColor: palette.secondary[900],
   },
   button: {
     primary: {
@@ -43,6 +27,26 @@ const darkTheme = {
       borderColor: palette.secondary[500],
       color: "white",
     },
+  },
+  paragraph: {
+    muted: {
+      color: "rgba(255, 255, 255, 0.7)",
+    },
+  },
+  iconButton: {
+    color: "rgba(255, 255, 255, 0.7)",
+    colorHover: "rgba(255, 255, 255, 0.8)",
+  },
+  sideNav: {
+    backgroundColor: palette.secondary[800],
+    borderColor: palette.secondary[700],
+  },
+  separator: {
+    borderColor: palette.secondary[50],
+  },
+  tooltip: {
+    background: palette.secondary[800],
+    color: "white",
   },
 }
 

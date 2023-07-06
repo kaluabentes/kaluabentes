@@ -6,26 +6,27 @@ import "jest-styled-components"
 
 import lightTheme from "@/design-system/theme/lightTheme"
 
-import TechIcon from "./TechIcon"
-import { BiUser } from "react-icons/bi"
+import Tooltip from "./Tooltip"
 
 expect.extend(toHaveNoViolations)
 
-const ThemedTechIcon = () => (
+const ThemedTooltip = () => (
   <ThemeProvider theme={lightTheme}>
-    <TechIcon label="Next.js" icon={<BiUser />} name="next" />
+    <Tooltip id="next" label="Tooltip">
+      Clique for more info
+    </Tooltip>
   </ThemeProvider>
 )
 
-describe("TechIcon", () => {
+describe("Tooltip", () => {
   it("renders without problems", () => {
-    const { container } = render(<ThemedTechIcon />)
+    const { container } = render(<ThemedTooltip />)
 
     expect(container).toBeInTheDocument()
   })
 
   it("should not have basic accessibility issues", async () => {
-    const { container } = render(<ThemedTechIcon />)
+    const { container } = render(<ThemedTooltip />)
     const results = await axe(container)
     expect(results).toHaveNoViolations()
   })
