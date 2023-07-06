@@ -139,6 +139,11 @@ export const Icon = styled.button<{ $name: TechIconProps["name"] }>`
           background-color: #4b32c3;
           color: white;
         `
+      case "shopify":
+        return css`
+          background-color: #5e8e3e;
+          color: white;
+        `
     }
   }}
 `

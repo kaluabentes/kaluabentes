@@ -15,6 +15,7 @@ import {
   SiPwa,
   SiReact,
   SiRedux,
+  SiShopify,
   SiStorybook,
   SiStrapi,
   SiStyledcomponents,
@@ -110,6 +111,10 @@ const techItems: TechIconProps[] = [
   {
     icon: <SiStrapi aria-hidden />,
     name: "strapi",
+  },
+  {
+    icon: <SiShopify aria-hidden />,
+    name: "shopify",
   },
   {
     icon: <SiVercel aria-hidden />,

@@ -28,6 +28,7 @@ export interface TechIconProps {
     | "chatgpt"
     | "storybook"
     | "eslint"
+    | "shopify"
 }
 
 const TechIcon = ({ icon, name }: TechIconProps) => (
