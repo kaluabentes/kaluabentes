@@ -3,7 +3,7 @@ import styled, { css } from "styled-components"
 import pxToRem from "../../utils/pxToRem"
 
 export const Container = styled.h2<{ $align?: "left" | "center" | "right" }>`
-  line-height: 1.2;
+  line-height: 1.5;
   margin: 0 0 ${pxToRem(32)} 0;
   font-weight: 600;
   text-align: ${(props) => props.$align};

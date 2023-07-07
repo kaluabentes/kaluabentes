@@ -9,6 +9,7 @@ import IconButton from "../../design-system/components/IconButton/IconButton"
 import SideNav from "../../design-system/components/SideNav"
 import menuItems from "../../config/menuItems"
 import useTheme from "../../design-system/theme/useTheme"
+
 import { Main } from "./AppLayout.styles"
 
 interface AppLayoutProps {

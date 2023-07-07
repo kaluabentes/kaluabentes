@@ -12,10 +12,16 @@ interface HeadingProps {
   level?: number
   children: ReactNode
   align?: "left" | "center" | "right"
+  className?: string
 }
 
-const Heading = ({ level = 2, children, align = "left" }: HeadingProps) => (
-  <Container as={asHeading[level]} $align={align}>
+const Heading = ({
+  level = 2,
+  children,
+  align = "left",
+  className,
+}: HeadingProps) => (
+  <Container as={asHeading[level]} $align={align} className={className}>
     {children}
   </Container>
 )

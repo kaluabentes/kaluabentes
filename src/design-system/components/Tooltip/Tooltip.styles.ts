@@ -19,7 +19,7 @@ export const Content = styled.h3<{ $isActive?: boolean }>`
   position: absolute;
   width: initial;
   top: 0;
-  transform: translateY(-28px);
+  transform: translateY(-113%);
   border-radius: ${pxToRem(4)};
   padding: ${pxToRem(4)} ${pxToRem(6)};
   align-items: center;
@@ -34,9 +34,9 @@ export const Content = styled.h3<{ $isActive?: boolean }>`
     content: "";
     width: 0;
     height: 0;
-    border-left: ${pxToRem(4)} solid transparent;
-    border-right: ${pxToRem(4)} solid transparent;
-    border-top: ${pxToRem(4)} solid ${(props) => props.theme.tooltip.background};
+    border-left: ${pxToRem(6)} solid transparent;
+    border-right: ${pxToRem(6)} solid transparent;
+    border-top: ${pxToRem(6)} solid ${(props) => props.theme.tooltip.background};
     position: absolute;
     bottom: -4px;
     left: 50%;

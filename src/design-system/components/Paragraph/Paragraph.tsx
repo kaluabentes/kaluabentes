@@ -6,6 +6,7 @@ export interface ParagraphProps {
   variant?: "default" | "muted"
   isBold?: boolean
   align?: "left" | "center" | "right"
+  className?: string
 }
 
 const Paragraph = ({
@@ -13,8 +14,14 @@ const Paragraph = ({
   variant = "default",
   isBold = false,
   align = "left",
+  className,
 }: ParagraphProps) => (
-  <Container $variant={variant} $isBold={isBold} $align={align}>
+  <Container
+    className={className}
+    $variant={variant}
+    $isBold={isBold}
+    $align={align}
+  >
     {children}
   </Container>
 )
