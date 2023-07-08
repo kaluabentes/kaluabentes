@@ -9,22 +9,23 @@ export const Container = styled.div`
   justify-content: center;
 `
 
-export const Content = styled.h3<{ $isActive?: boolean }>`
+export const Content = styled.p<{ $isActive?: boolean }>`
   margin: 0;
   font-weight: 500;
-  font-size: ${pxToRem(14)};
+  font-size: ${pxToRem(14)} !important;
   background: ${(props) => props.theme.tooltip.background};
   color: ${(props) => props.theme.tooltip.color};
   display: none;
   position: absolute;
   width: initial;
   top: 0;
-  transform: translateY(-113%);
+  transform: translateY(-130%);
   border-radius: ${pxToRem(4)};
   padding: ${pxToRem(4)} ${pxToRem(6)};
   align-items: center;
   text-align: center;
   z-index: 50;
+  line-height: 1 !important;
 
   ${queryLg(css`
     white-space: nowrap;

@@ -45,8 +45,8 @@ const darkTheme = {
     borderColor: palette.secondary[50],
   },
   tooltip: {
-    background: palette.secondary[800],
-    color: "white",
+    background: "white",
+    color: palette.secondary[800],
   },
 }
 
