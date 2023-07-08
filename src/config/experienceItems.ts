@@ -21,6 +21,7 @@ const experienceItems = [
         "graphql",
         "jest",
         "testing-library",
+        "eslint",
       ].includes(techItem.name)
     ),
   },
@@ -41,6 +42,7 @@ const experienceItems = [
         "nodejs",
         "jest",
         "testing-library",
+        "eslint",
       ].includes(techItem.name)
     ),
   },
@@ -135,6 +137,7 @@ const experienceItems = [
         "django",
         "python",
         "wagtail",
+        "cssmodules",
       ].includes(techItem.name)
     ),
   },
@@ -146,9 +149,16 @@ const experienceItems = [
     company: "Alvo Comunicação Marketing e Inovação",
     city: "Guarapari - ES",
     techs: techItems.filter((techItem) =>
-      ["html", "css", "javascript", "php", "mysql", "wordpress"].includes(
-        techItem.name
-      )
+      [
+        "html",
+        "css",
+        "javascript",
+        "php",
+        "mysql",
+        "wordpress",
+        "gulp",
+        "sass",
+      ].includes(techItem.name)
     ),
   },
   {
