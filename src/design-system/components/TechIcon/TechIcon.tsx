@@ -45,6 +45,10 @@ export interface TechIconProps {
     | "django"
     | "python"
     | "wagtail"
+    | "nestjs"
+    | "context-api"
+    | "react-hooks"
+    | "design-system"
 }
 
 const TechIcon = ({ icon, name, label }: TechIconProps) => (

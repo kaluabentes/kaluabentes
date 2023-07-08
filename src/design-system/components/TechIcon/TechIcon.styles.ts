@@ -214,6 +214,26 @@ export const Icon = styled.div<{ $name: TechIconProps["name"] }>`
           background-color: #366b98;
           color: white;
         `
+      case "nestjs":
+        return css`
+          background-color: #ea2845;
+          color: white;
+        `
+      case "context-api":
+        return css`
+          background-color: #222222;
+          color: #02dafa;
+        `
+      case "react-hooks":
+        return css`
+          background-color: #222222;
+          color: #02dafa;
+        `
+      case "design-system":
+        return css`
+          background-color: ${(props) => props.theme.button.primary.background};
+          color: white;
+        `
     }
   }}
 `

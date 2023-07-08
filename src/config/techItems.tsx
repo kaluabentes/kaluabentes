@@ -15,6 +15,7 @@ import {
   SiJest,
   SiLaravel,
   SiMysql,
+  SiNestjs,
   SiNextdotjs,
   SiNodedotjs,
   SiOpenai,
@@ -38,8 +39,11 @@ import {
   SiWordpress,
 } from "react-icons/si"
 import { TbBrandReactNative } from "react-icons/tb"
+import { GiHook } from "react-icons/gi"
+import { PiWebhooksLogo } from "react-icons/pi"
 
 import { TechIconProps } from "../design-system/components/TechIcon"
+import { BiAtom } from "react-icons/bi"
 
 const techItems: TechIconProps[] = [
   {
@@ -63,34 +67,19 @@ const techItems: TechIconProps[] = [
     name: "typescript",
   },
   {
-    label: "Gulp.js",
-    icon: <SiGulp aria-hidden />,
-    name: "gulp",
-  },
-  {
-    label: "PHP",
-    icon: <SiPhp aria-hidden />,
-    name: "php",
-  },
-  {
-    label: "Laravel",
-    icon: <SiLaravel aria-hidden />,
-    name: "laravel",
-  },
-  {
-    label: "Node.js",
-    icon: <SiNodedotjs aria-hidden />,
-    name: "nodejs",
-  },
-  {
     label: "React",
     icon: <SiReact aria-hidden />,
     name: "react",
   },
   {
-    label: "React Native",
-    icon: <TbBrandReactNative aria-hidden />,
-    name: "react-native",
+    label: "React Hooks",
+    icon: <GiHook aria-hidden />,
+    name: "react-hooks",
+  },
+  {
+    label: "Context API",
+    icon: <PiWebhooksLogo aria-hidden />,
+    name: "context-api",
   },
   {
     label: "Redux",
@@ -98,14 +87,9 @@ const techItems: TechIconProps[] = [
     name: "redux",
   },
   {
-    label: "Vue.js",
-    icon: <SiVuedotjs aria-hidden />,
-    name: "vue",
-  },
-  {
-    label: "Angular.js",
-    icon: <SiAngularjs aria-hidden />,
-    name: "angular",
+    label: "React Native",
+    icon: <TbBrandReactNative aria-hidden />,
+    name: "react-native",
   },
   {
     label: "Next.js",
@@ -128,6 +112,42 @@ const techItems: TechIconProps[] = [
     name: "cssmodules",
   },
   {
+    label: "Gulp.js",
+    icon: <SiGulp aria-hidden />,
+    name: "gulp",
+  },
+  {
+    label: "PHP",
+    icon: <SiPhp aria-hidden />,
+    name: "php",
+  },
+  {
+    label: "Laravel",
+    icon: <SiLaravel aria-hidden />,
+    name: "laravel",
+  },
+  {
+    label: "Node.js",
+    icon: <SiNodedotjs aria-hidden />,
+    name: "nodejs",
+  },
+
+  {
+    label: "Nest.js",
+    icon: <SiNestjs aria-hidden />,
+    name: "nestjs",
+  },
+  {
+    label: "Vue.js",
+    icon: <SiVuedotjs aria-hidden />,
+    name: "vue",
+  },
+  {
+    label: "Angular.js",
+    icon: <SiAngularjs aria-hidden />,
+    name: "angular",
+  },
+  {
     label: "Git",
     icon: <SiGit aria-hidden />,
     name: "git",
@@ -141,6 +161,11 @@ const techItems: TechIconProps[] = [
     label: "Storybook",
     icon: <SiStorybook aria-hidden />,
     name: "storybook",
+  },
+  {
+    label: "Design Systems",
+    icon: <BiAtom aria-hidden />,
+    name: "design-system",
   },
   {
     label: "ESLint",
