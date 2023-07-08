@@ -32,6 +32,19 @@ export interface TechIconProps {
     | "eslint"
     | "shopify"
     | "react-native"
+    | "angular"
+    | "php"
+    | "mysql"
+    | "laravel"
+    | "gulp"
+    | "wordpress"
+    | "sass"
+    | "cssmodules"
+    | "github"
+    | "git"
+    | "django"
+    | "python"
+    | "wagtail"
 }
 
 const TechIcon = ({ icon, name, label }: TechIconProps) => (

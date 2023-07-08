@@ -1,3 +1,5 @@
+"use client"
+
 import createKey from "../../utils/createKey"
 import ExperienceCard, { ExperienceCardProps } from "../ExperienceCard"
 import Heading from "../Heading"

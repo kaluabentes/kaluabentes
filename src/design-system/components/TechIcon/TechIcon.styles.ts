@@ -149,6 +149,71 @@ export const Icon = styled.div<{ $name: TechIconProps["name"] }>`
           background-color: #222222;
           color: #02dafa;
         `
+      case "angular":
+        return css`
+          background-color: #dd0031;
+          color: white;
+        `
+      case "php":
+        return css`
+          background-color: #777bb3;
+          color: white;
+        `
+      case "mysql":
+        return css`
+          background-color: #00618b;
+          color: white;
+        `
+      case "laravel":
+        return css`
+          background-color: #ef3b2d;
+          color: white;
+        `
+      case "gulp":
+        return css`
+          background-color: #f44a4c;
+          color: white;
+        `
+      case "wordpress":
+        return css`
+          background-color: #21759b;
+          color: white;
+        `
+      case "sass":
+        return css`
+          background-color: #cd6799;
+          color: white;
+        `
+      case "cssmodules":
+        return css`
+          background-color: black;
+          color: white;
+        `
+      case "github":
+        return css`
+          background-color: black;
+          color: white;
+        `
+      case "git":
+        return css`
+          background-color: #f05033;
+          color: white;
+        `
+      case "django":
+        return css`
+          background-color: #0c4c32;
+          color: white;
+        `
+      case "wagtail":
+        return css`
+          background-color: #41b0ae;
+          color: white;
+        `
+      case "python":
+        return css`
+          background-color: #366b98;
+          color: white;
+        `
     }
   }}
 `

@@ -1,20 +1,31 @@
 import {
+  SiAngularjs,
   SiCss3,
+  SiCssmodules,
   SiCypress,
+  SiDjango,
   SiEslint,
+  SiGit,
+  SiGithub,
   SiGraphql,
+  SiGulp,
   SiHtml5,
   SiJamstack,
   SiJavascript,
   SiJest,
+  SiLaravel,
+  SiMysql,
   SiNextdotjs,
   SiNodedotjs,
   SiOpenai,
+  SiPhp,
   SiPostgresql,
   SiPrisma,
   SiPwa,
+  SiPython,
   SiReact,
   SiRedux,
+  SiSass,
   SiShopify,
   SiStorybook,
   SiStrapi,
@@ -23,6 +34,8 @@ import {
   SiTypescript,
   SiVercel,
   SiVuedotjs,
+  SiWagtail,
+  SiWordpress,
 } from "react-icons/si"
 import { TbBrandReactNative } from "react-icons/tb"
 
@@ -50,6 +63,21 @@ const techItems: TechIconProps[] = [
     name: "typescript",
   },
   {
+    label: "Gulp.js",
+    icon: <SiGulp aria-hidden />,
+    name: "gulp",
+  },
+  {
+    label: "PHP",
+    icon: <SiPhp aria-hidden />,
+    name: "php",
+  },
+  {
+    label: "Laravel",
+    icon: <SiLaravel aria-hidden />,
+    name: "laravel",
+  },
+  {
     label: "Node.js",
     icon: <SiNodedotjs aria-hidden />,
     name: "nodejs",
@@ -75,6 +103,11 @@ const techItems: TechIconProps[] = [
     name: "vue",
   },
   {
+    label: "Angular.js",
+    icon: <SiAngularjs aria-hidden />,
+    name: "angular",
+  },
+  {
     label: "Next.js",
     icon: <SiNextdotjs aria-hidden />,
     name: "next",
@@ -83,6 +116,26 @@ const techItems: TechIconProps[] = [
     label: "Styled Components",
     icon: <SiStyledcomponents aria-hidden />,
     name: "styled-components",
+  },
+  {
+    label: "Sass",
+    icon: <SiSass aria-hidden />,
+    name: "sass",
+  },
+  {
+    label: "CSS Modules",
+    icon: <SiCssmodules aria-hidden />,
+    name: "cssmodules",
+  },
+  {
+    label: "Git",
+    icon: <SiGit aria-hidden />,
+    name: "git",
+  },
+  {
+    label: "GitHub",
+    icon: <SiGithub aria-hidden />,
+    name: "github",
   },
   {
     label: "Storybook",
@@ -135,9 +188,34 @@ const techItems: TechIconProps[] = [
     name: "postgres",
   },
   {
+    label: "MySQL",
+    icon: <SiMysql aria-hidden />,
+    name: "mysql",
+  },
+  {
     label: "Strapi",
     icon: <SiStrapi aria-hidden />,
     name: "strapi",
+  },
+  {
+    label: "Wordpress",
+    icon: <SiWordpress aria-hidden />,
+    name: "wordpress",
+  },
+  {
+    label: "Python",
+    icon: <SiPython aria-hidden />,
+    name: "python",
+  },
+  {
+    label: "Wagtail",
+    icon: <SiWagtail aria-hidden />,
+    name: "wagtail",
+  },
+  {
+    label: "Django",
+    icon: <SiDjango aria-hidden />,
+    name: "django",
   },
   {
     label: "Shopify",

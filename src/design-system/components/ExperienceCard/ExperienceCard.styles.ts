@@ -6,13 +6,7 @@ import pxToRem from "../../utils/pxToRem"
 import queryLg from "../../utils/queryLg"
 
 export const Container = styled.article`
-  padding: ${pxToRem(16)};
-  border-radius: ${pxToRem(12)};
   transition: 0.3s ease-in;
-
-  &:hover {
-    box-shadow: 0px 0px 15px 1px rgba(0, 0, 0, 0.1);
-  }
 
   & * {
     margin: 0;
@@ -31,6 +25,7 @@ export const Container = styled.article`
 
   ${queryLg(css`
     display: flex;
+    gap: ${pxToRem(48)};
   `)}
 `
 
@@ -39,14 +34,20 @@ export const Details = styled.div`
 
   ${queryLg(css`
     width: 100%;
-    max-width: ${pxToRem(200)};
+    max-width: 20%;
   `)}
 `
 
-export const Content = styled.div``
+export const Content = styled.div`
+  ${queryLg(css`
+    width: 100%;
+    max-width: 80%;
+  `)}
+`
 
 export const Period = styled(Paragraph)`
   font-weight: 500;
+  font-size: ${pxToRem(18)} !important;
 `
 
 export const Company = styled(Paragraph)``
@@ -55,6 +56,7 @@ export const City = styled(Paragraph)``
 
 export const Role = styled(Heading)`
   font-weight: 600;
+  font-size: ${pxToRem(18)} !important;
 
   ${queryLg(css`
     margin-bottom: 0;

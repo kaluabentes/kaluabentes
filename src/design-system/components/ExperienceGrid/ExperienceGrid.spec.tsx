@@ -5,9 +5,9 @@ import "@testing-library/jest-dom"
 import "jest-styled-components"
 
 import lightTheme from "@/design-system/theme/lightTheme"
+import experienceItems from "@/config/experienceItems"
 
 import ExperienceGrid from "./ExperienceGrid"
-import experienceItems from "./experienceItems"
 
 expect.extend(toHaveNoViolations)
 
