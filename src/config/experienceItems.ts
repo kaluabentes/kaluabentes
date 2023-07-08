@@ -5,7 +5,7 @@ const experienceItems = [
     role: "Frontend Developer",
     company: "DBC Company",
     description:
-      "Trabalhei para um dos clientes parceiros que possuia uma ferramenta interna, um dashboard de dados para a Renner. A aplicação exibia dados gerados por um algoritmo de machine learning, o que exigia uma atenção especial à performance devido à grande quantidade de dados envolvidos. Aprender a lidar com a otimização e a manipulação eficiente desses dados, garantindo uma experiência fluida para os usuários, foi um dos principais aprendizados.",
+      "Trabalhei para um dos clientes parceiros que possuia uma ferramenta interna. A aplicação exibia dados gerados por um algoritmo de machine learning, o que exigia uma atenção especial à performance devido à grande quantidade de dados envolvidos. Aprender a lidar com a otimização e a manipulação eficiente desses dados, garantindo uma experiência fluida para os usuários, foi um dos principais aprendizados.",
     period: "Jun/2022 - Mai/2023",
     city: "Remoto",
     techs: techItems.filter((techItem) =>
@@ -29,7 +29,7 @@ const experienceItems = [
     role: "Frontend Developer",
     company: "Hotmart",
     description:
-      "Trabalhar como engenheiro frontend em uma empresa grande, seguindo metodologias ágeis e colaborando em squads, trouxe aprendizados valiosos em escalabilidade e experiência do usuário. Contribuir para uma ferramenta interna utilizada por milhares de usuários e colaborar no desenvolvimento do design system Cosmos trouxe benefícios como crescimento profissional, aprimoramento técnico e compreensão da importância da colaboração e agilidade no desenvolvimento.",
+      "Trabalhar como engenheiro frontend em uma empresa grande, seguindo metodologias ágeis e colaborando em squads, trouxe aprendizados valiosos em escalabilidade e experiência do usuário. Contribuir para uma ferramenta interna utilizada por milhares de usuários e colaborar no desenvolvimento do design system Cosmos trouxe benefícios como visão mais sistêmica, escalabilidade em grandes design systems, e compreensão da importância da colaboração e agilidade no desenvolvimento.",
     period: "Ago/2021 - Mai/2022",
     city: "Remoto",
     techs: techItems.filter((techItem) =>
@@ -50,7 +50,7 @@ const experienceItems = [
     role: "Frontend Developer",
     company: "FDTE",
     description:
-      "Como frontend developer em uma empresa com diversos clientes, trabalhei no desenvolvimento de aplicativos em React Native, oferecendo experiências móveis de alta qualidade. Além disso, participei de projetos React para web, incluindo um dashboard para controle de ônibus no Aeroporto de Guarulhos, em São Paulo. Essa experiência diversificada fortaleceu minhas habilidades e permitiu entregar soluções inovadoras para atender às necessidades dos clientes.",
+      "Como frontend developer em uma empresa com diversos clientes, trabalhei no desenvolvimento de aplicativos em React Native, oferecendo experiências móveis de alta qualidade. Além disso, participei de projetos React para web, incluindo um dashboard para controle de fluxo de ônibus do Aeroporto de Guarulhos, em São Paulo. Essa experiência diversificada fortaleceu minhas habilidades e permitiu entregar soluções inovadoras para atender às necessidades dos clientes.",
     period: "Out/2020 - Ago/2021",
     city: "Remoto",
     techs: techItems.filter((techItem) =>
@@ -97,7 +97,7 @@ const experienceItems = [
     role: "Full Stack Developer",
     company: "Desenvolva",
     description:
-      "Trabalhei em um projeto de desenvolvimento de um aplicativo móvel utilizando React Native, onde tive a oportunidade de construir a aplicação desde a implementação da funcionalidade em tempo real até a criação de um app nativo cross-platform. Para gerenciar o estado da aplicação, adotei uma arquitetura utilizando Redux e Redux Saga, permitindo uma gestão eficiente dos dados e das interações assíncronas. Essa experiência me proporcionou um conhecimento aprofundado em React Native, bem como habilidades avançadas na construção de aplicativos móveis com excelente desempenho e experiência do usuário.",
+      "Trabalhei em um projeto de desenvolvimento de um aplicativo móvel utilizando React Native, onde tive a oportunidade de construir a aplicação desde a implementação da funcionalidade em tempo real até a criação de um app nativo cross-platform. Para gerenciar o estado da aplicação, foi adotado uma arquitetura utilizando Redux e Redux Saga, permitindo uma gestão eficiente dos dados e das interações assíncronas. Essa experiência me proporcionou um conhecimento aprofundado em React Native, bem como habilidades avançadas na construção de aplicativos móveis com excelente desempenho e experiência do usuário.",
     period: "Nov/2019 - Abr/2020",
     city: "Florianópolis - SC",
     techs: techItems.filter((techItem) =>
@@ -121,7 +121,7 @@ const experienceItems = [
     role: "Frontend Developer",
     company: "Cheesecake Labs",
     description:
-      "Como desenvolvedor frontend em uma empresa com clientes estrangeiros e startups, utilizei HTML, CSS, JavaScript, React.js, Storybook e Redux.js para criar interfaces atraentes e dinâmicas. Também trabalhei com Node.js, Django, Python e Wagtail, desenvolvendo aplicativos web robustos e escaláveis. Colaborei com equipes diversificadas, atendendo às demandas das startups em crescimento.",
+      "Como desenvolvedor frontend em uma empresa com clientes estrangeiros e startups, utilizei React.js com Next.js, Storybook e Redux.js para criar interfaces atraentes e dinâmicas. Também trabalhei com Node.js, Django, Python e Wagtail, desenvolvendo aplicativos web robustos e escaláveis. Colaborei com equipes diversificadas, atendendo às demandas das startups em crescimento.",
     period: "Fev/2018 - Out/2019",
     city: "Florianópolis - SC",
     techs: techItems.filter((techItem) =>
@@ -144,7 +144,7 @@ const experienceItems = [
   {
     role: "Full Stack Developer",
     description:
-      "Desenhei e implementei temas personalizados no WordPress utilizando PHP, JavaScript, HTML e CSS. Aprendi a criar interfaces atraentes, adicionar funcionalidades dinâmicas e personalizar a experiência do usuário. Aprofundei meus conhecimentos em gerenciamento de conteúdo e customização de temas e plugins, oferecendo soluções únicas para cada projeto.",
+      "Desenhei e implementei temas personalizados no WordPress. Aprendi a criar interfaces atraentes, adicionar funcionalidades dinâmicas e personalizar a experiência do usuário. Aprofundei meus conhecimentos em gerenciamento de conteúdo e customização de temas e plugins, oferecendo soluções únicas para cada projeto.",
     period: "Jan/2017 - Jan/2018",
     company: "Alvo Comunicação Marketing e Inovação",
     city: "Guarapari - ES",
@@ -164,7 +164,7 @@ const experienceItems = [
   {
     role: "Full Stack Developer",
     description:
-      "Como desenvolvedor fullstack, tive a oportunidade de utilizar HTML, JavaScript, CSS, PHP, Laravel e MySQL para construir plataformas e sites. Com essas tecnologias, pude criar interfaces atraentes, implementar funcionalidades dinâmicas e desenvolver aplicações robustas e escaláveis, proporcionando uma experiência de alta qualidade para os usuários.",
+      "Como desenvolvedor fullstack, tive a oportunidade de utilizar o framework Laravel para construir plataformas e sites. Com este framework, pude criar interfaces atraentes, implementar funcionalidades dinâmicas e desenvolver aplicações robustas e escaláveis, proporcionando uma experiência de alta qualidade para os usuários.",
     period: "Jan/2015 - Jul/2016",
     company: "Wikiz Comunicação Digital",
     city: "Guarapari - ES",
