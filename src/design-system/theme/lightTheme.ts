@@ -30,7 +30,7 @@ const lightTheme = {
   },
   paragraph: {
     muted: {
-      color: palette.secondary[600],
+      color: palette.secondary[700],
     },
   },
   separator: {
