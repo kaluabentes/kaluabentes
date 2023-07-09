@@ -44,6 +44,15 @@ const darkTheme = {
   separator: {
     borderColor: palette.secondary[50],
   },
+  tag: {
+    default: {
+      background: palette.secondary[800],
+      backgroundHover: palette.secondary[700],
+      backgroundActive: palette.secondary[900],
+      borderColor: palette.secondary[500],
+      color: "white",
+    },
+  },
   tooltip: {
     background: "white",
     color: palette.secondary[800],

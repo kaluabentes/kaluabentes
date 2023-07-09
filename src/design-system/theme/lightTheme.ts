@@ -44,6 +44,15 @@ const lightTheme = {
     backgroundColor: "white",
     borderColor: palette.secondary[100],
   },
+  tag: {
+    default: {
+      background: "white",
+      backgroundHover: palette.secondary[50],
+      backgroundActive: palette.secondary[200],
+      borderColor: palette.secondary[300],
+      color: palette.secondary[800],
+    },
+  },
   tooltip: {
     background: palette.secondary[800],
     color: "white",
