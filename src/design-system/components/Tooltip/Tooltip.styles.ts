@@ -11,7 +11,7 @@ export const Container = styled.div`
 
 export const Content = styled.p<{ $isActive?: boolean }>`
   margin: 0;
-  font-weight: 500;
+  font-weight: 600;
   font-size: ${pxToRem(14)} !important;
   background: ${(props) => props.theme.tooltip.background};
   color: ${(props) => props.theme.tooltip.color};
