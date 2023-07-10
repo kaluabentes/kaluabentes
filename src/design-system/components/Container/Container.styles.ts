@@ -2,11 +2,16 @@ import styled, { css } from "styled-components"
 
 import pxToRem from "../../utils/pxToRem"
 import { ContainerProps } from "./Container"
+import queryLg from "@/design-system/utils/queryLg"
 
 export const BaseContainer = styled.div<{ $size?: ContainerProps["size"] }>`
   margin: 0 auto;
   padding: 0 ${pxToRem(16)};
   width: 100%;
+
+  ${queryLg(css`
+    padding: 0 ${pxToRem(32)};
+  `)}
 
   ${(props) =>
     props.$size === "sm" &&
