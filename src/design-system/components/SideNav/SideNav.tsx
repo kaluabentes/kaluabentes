@@ -1,7 +1,16 @@
 import { BiX } from "react-icons/bi"
-import IconButton from "../IconButton/IconButton"
-import { Container, Header, List, ListItem, Title } from "./SideNav.styles"
 import Link from "next/link"
+
+import {
+  Backdrop,
+  Container,
+  Nav,
+  Header,
+  List,
+  ListItem,
+  Title,
+} from "./SideNav.styles"
+import IconButton from "../IconButton/IconButton"
 
 interface SideNavProps {
   menuItems: {
@@ -9,24 +18,28 @@ interface SideNavProps {
     path: string
   }[]
   isOpen?: boolean
-  onClick: (path: string) => void
   onClose?: () => void
 }
 
-const SideNav = ({ menuItems = [], isOpen, onClose }: SideNavProps) => (
-  <Container $isOpen={isOpen}>
-    <Header>
-      <Title>Navegação</Title>
-      <IconButton onClick={onClose} icon={<BiX />} label="Fechar" />
-    </Header>
-    <List>
-      {menuItems.map((menuItem) => (
-        <ListItem key={menuItem.path}>
-          <Link href={menuItem.path}>{menuItem.label}</Link>
-        </ListItem>
-      ))}
-    </List>
-  </Container>
-)
+const SideNav = ({ menuItems = [], isOpen, onClose }: SideNavProps) => {
+  return (
+    <Container>
+      <Nav $isOpen={isOpen}>
+        <Header>
+          <Title>Navegação</Title>
+          <IconButton onClick={onClose} icon={<BiX />} label="Fechar" />
+        </Header>
+        <List>
+          {menuItems.map((menuItem) => (
+            <ListItem key={menuItem.path}>
+              <Link href={menuItem.path}>{menuItem.label}</Link>
+            </ListItem>
+          ))}
+        </List>
+      </Nav>
+      <Backdrop aria-label="Overlay" $isOpen={isOpen} onClick={onClose} />
+    </Container>
+  )
+}
 
 export default SideNav

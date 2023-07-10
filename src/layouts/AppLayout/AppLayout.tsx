@@ -2,7 +2,6 @@
 
 import { ReactNode, useState } from "react"
 import { BiCloudLightning, BiMenu, BiMoon, BiSun } from "react-icons/bi"
-import { useRouter } from "next/navigation"
 
 import AppBar from "../../design-system/components/AppBar"
 import IconButton from "../../design-system/components/IconButton/IconButton"
@@ -17,7 +16,6 @@ interface AppLayoutProps {
 }
 
 const AppLayout = ({ children }: AppLayoutProps) => {
-  const router = useRouter()
   const { theme, toggleTheme } = useTheme()
   const [isSideNavOpen, setIsSideNavOpen] = useState(false)
 
@@ -38,7 +36,6 @@ const AppLayout = ({ children }: AppLayoutProps) => {
       </AppBar>
       <SideNav
         isOpen={isSideNavOpen}
-        onClick={(path) => router.push(path)}
         menuItems={menuItems}
         onClose={() => setIsSideNavOpen(false)}
       />

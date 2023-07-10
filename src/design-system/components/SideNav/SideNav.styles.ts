@@ -2,7 +2,28 @@ import styled, { css } from "styled-components"
 
 import pxToRem from "../../utils/pxToRem"
 
-export const Container = styled.nav<{ $isOpen?: boolean }>`
+export const Container = styled.div``
+
+export const Backdrop = styled.button<{ $isOpen?: boolean }>`
+  height: 100vh;
+  width: 100%;
+  top: 0;
+  left: 0;
+  visibility: hidden;
+  position: fixed;
+  z-index: 100;
+  background: transparent;
+  border: 0;
+  outline: 0;
+
+  ${(props) =>
+    props.$isOpen &&
+    css`
+      visibility: visible;
+    `}
+`
+
+export const Nav = styled.nav<{ $isOpen?: boolean }>`
   z-index: 200;
   height: 100vh;
   box-shadow: 1px 0px 3px 1px rgba(0, 0, 0, 0.1);

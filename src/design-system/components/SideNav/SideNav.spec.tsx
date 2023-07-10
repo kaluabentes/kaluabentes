@@ -12,9 +12,9 @@ import { ReactNode } from "react"
 
 expect.extend(toHaveNoViolations)
 
-const Themed = ({ onClick = (path: string) => path }) => (
+const Themed = () => (
   <ThemeProvider theme={lightTheme}>
-    <SideNav onClick={onClick} menuItems={menuItems} />
+    <SideNav menuItems={menuItems} />
   </ThemeProvider>
 )
 
