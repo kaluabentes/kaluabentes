@@ -57,6 +57,7 @@ export const ContentItem = styled.div`
     font-weight: 500;
     transform: translateY(-4px);
     font-size: ${pxToRem(18)};
+    text-align: center;
   }
 
   ${queryLg(css`
@@ -71,6 +72,10 @@ export const ContentItem = styled.div`
     & h1 {
       line-height: 1;
       font-size: ${pxToRem(54)};
+    }
+
+    & p {
+      text-align: left;
     }
   `)}
 `
