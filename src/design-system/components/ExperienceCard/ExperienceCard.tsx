@@ -1,16 +1,16 @@
-import Heading from "../Heading"
-import { Grid } from "../TechGrid/TechGrid.styles"
-import TechIcon, { TechIconProps } from "../TechIcon"
 import {
   City,
   Company,
   Container,
   Content,
+  Description,
   Details,
   Period,
   Role,
-  Description,
 } from "./ExperienceCard.styles"
+import Heading from "../Heading"
+import { Grid } from "../TechGrid/TechGrid.styles"
+import TechIcon, { TechIconProps } from "../TechIcon"
 
 export interface ExperienceCardProps {
   role: string

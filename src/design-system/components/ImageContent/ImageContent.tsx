@@ -2,14 +2,13 @@
 
 import { ReactNode } from "react"
 
-import Heading from "../Heading"
-
 import {
   Container,
   ContentBox,
   ContentSide,
   Image,
 } from "./ImageContent.styles"
+import Heading from "../Heading"
 
 interface ImageContentProps {
   title: string

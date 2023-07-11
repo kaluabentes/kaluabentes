@@ -1,13 +1,12 @@
 import { render } from "@testing-library/react"
 import { axe, toHaveNoViolations } from "jest-axe"
+import { SiHtml5 } from "react-icons/si"
 import { ThemeProvider } from "styled-components"
 import "@testing-library/jest-dom"
 import "jest-styled-components"
 
-import lightTheme from "@/design-system/theme/lightTheme"
-import techItems from "@/config/techItems"
-
 import ExperienceCard from "./ExperienceCard"
+import lightTheme from "../../theme/lightTheme"
 
 expect.extend(toHaveNoViolations)
 
@@ -19,7 +18,13 @@ const ThemedExperienceCard = () => (
       period="02/2021 á 003/2022"
       company="Company X"
       city="Metrópolis"
-      techs={techItems}
+      techs={[
+        {
+          label: "HTML5",
+          icon: <SiHtml5 aria-hidden />,
+          name: "html",
+        },
+      ]}
     />
   </ThemeProvider>
 )

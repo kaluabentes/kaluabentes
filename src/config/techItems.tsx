@@ -1,3 +1,6 @@
+import { BiAtom } from "react-icons/bi"
+import { GiHook } from "react-icons/gi"
+import { PiWebhooksLogo } from "react-icons/pi"
 import {
   SiAngularjs,
   SiCss3,
@@ -39,11 +42,8 @@ import {
   SiWordpress,
 } from "react-icons/si"
 import { TbBrandReactNative } from "react-icons/tb"
-import { GiHook } from "react-icons/gi"
-import { PiWebhooksLogo } from "react-icons/pi"
 
 import { TechIconProps } from "../design-system/components/TechIcon"
-import { BiAtom } from "react-icons/bi"
 
 const techItems: TechIconProps[] = [
   {

@@ -1,8 +1,8 @@
 import type { Meta, StoryObj } from "@storybook/react"
 
+import { BiCloudLightning, BiLogoWhatsapp, BiMenu } from "react-icons/bi"
 import AppBar from "./AppBar"
 import IconButton from "../IconButton/IconButton"
-import { BiCloudLightning, BiLogoWhatsapp, BiMenu } from "react-icons/bi"
 
 const meta: Meta<typeof AppBar> = {
   title: "components/AppBar",

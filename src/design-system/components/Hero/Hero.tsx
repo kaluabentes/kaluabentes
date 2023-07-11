@@ -2,11 +2,11 @@
 
 import { ReactNode } from "react"
 
+import { Container, ContentItem } from "./Hero.styles"
 import Avatar from "../Avatar"
 import Button from "../Button"
 import Heading from "../Heading"
 import Paragraph from "../Paragraph"
-import { Container, ContentItem } from "./Hero.styles"
 
 interface HeroProps {
   headline: string

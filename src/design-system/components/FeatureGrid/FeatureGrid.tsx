@@ -2,11 +2,10 @@
 
 import { ReactNode } from "react"
 
+import { Container, Grid } from "./FeatureGrid.styles"
+import FeatureCard from "../FeatureCard"
 import Heading from "../Heading"
 import Paragraph from "../Paragraph"
-import FeatureCard from "../FeatureCard"
-
-import { Container, Grid } from "./FeatureGrid.styles"
 
 interface FeatureGridProps {
   title: string

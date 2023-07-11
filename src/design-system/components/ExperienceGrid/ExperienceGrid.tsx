@@ -1,10 +1,9 @@
 "use client"
 
+import { Container, Grid } from "./ExperienceGrid.styles"
 import createKey from "../../utils/createKey"
 import ExperienceCard, { ExperienceCardProps } from "../ExperienceCard"
 import Heading from "../Heading"
-
-import { Container, Grid } from "./ExperienceGrid.styles"
 
 interface ExperienceGridProps {
   title: string

@@ -1,9 +1,8 @@
 import { ReactNode } from "react"
 
+import { Container, Icon } from "./FeatureCard.styles"
 import Heading from "../Heading"
 import Paragraph from "../Paragraph"
-
-import { Container, Icon } from "./FeatureCard.styles"
 
 interface FeatureCardProps {
   title: string

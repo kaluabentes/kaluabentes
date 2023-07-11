@@ -1,11 +1,10 @@
 "use client"
 
+import { Container, Grid } from "./TechGrid.styles"
+import createKey from "../../utils/createKey"
 import Heading from "../Heading"
 import TechIcon from "../TechIcon"
 import { TechIconProps } from "../TechIcon/TechIcon"
-import createKey from "../../utils/createKey"
-
-import { Container, Grid } from "./TechGrid.styles"
 
 interface TechGridProps {
   title: string

@@ -1,5 +1,3 @@
-import Paragraph from "../Paragraph"
-import Tag from "../Tag"
 import {
   Container,
   Description,
@@ -8,6 +6,8 @@ import {
   TagBox,
   Title,
 } from "./PostCard.styles"
+import Paragraph from "../Paragraph"
+import Tag from "../Tag"
 
 interface TagProps {
   label: string

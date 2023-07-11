@@ -1,20 +1,25 @@
 import { render, screen } from "@testing-library/react"
 import { axe, toHaveNoViolations } from "jest-axe"
+import { ReactNode } from "react"
 import { ThemeProvider } from "styled-components"
 import "@testing-library/jest-dom"
 import "jest-styled-components"
 
-import lightTheme from "@/design-system/theme/lightTheme"
-import menuItems from "@/config/menuItems"
-
 import SideNav from "./SideNav"
-import { ReactNode } from "react"
+import lightTheme from "../../theme/lightTheme"
 
 expect.extend(toHaveNoViolations)
 
 const Themed = () => (
   <ThemeProvider theme={lightTheme}>
-    <SideNav menuItems={menuItems} />
+    <SideNav
+      menuItems={[
+        {
+          label: "Home",
+          path: "/",
+        },
+      ]}
+    />
   </ThemeProvider>
 )
 

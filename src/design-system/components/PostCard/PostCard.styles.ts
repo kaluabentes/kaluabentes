@@ -1,8 +1,8 @@
 import styled from "styled-components"
 
 import pxToRem from "../../utils/pxToRem"
-import Paragraph from "../Paragraph"
 import Heading from "../Heading"
+import Paragraph from "../Paragraph"
 
 export const Container = styled.article``
 

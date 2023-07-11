@@ -1,10 +1,9 @@
 import type { Meta, StoryObj } from "@storybook/react"
 
+import ImageContent from "./ImageContent"
+import Button from "../Button"
 import Heading from "../Heading"
 import Paragraph from "../Paragraph"
-import Button from "../Button"
-
-import ImageContent from "./ImageContent"
 
 const meta: Meta<typeof ImageContent> = {
   title: "components/ImageContent",

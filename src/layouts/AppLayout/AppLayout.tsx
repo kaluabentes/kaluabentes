@@ -3,13 +3,12 @@
 import { ReactNode, useState } from "react"
 import { BiCloudLightning, BiMenu, BiMoon, BiSun } from "react-icons/bi"
 
+import { Main } from "./AppLayout.styles"
+import menuItems from "../../config/menuItems"
 import AppBar from "../../design-system/components/AppBar"
 import IconButton from "../../design-system/components/IconButton/IconButton"
 import SideNav from "../../design-system/components/SideNav"
-import menuItems from "../../config/menuItems"
-import useTheme from "../../design-system/theme/useTheme"
-
-import { Main } from "./AppLayout.styles"
+import useTheme from "../../design-system/theme/ThemeProvider/useTheme"
 
 interface AppLayoutProps {
   children: ReactNode

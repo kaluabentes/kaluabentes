@@ -1,9 +1,8 @@
 import styled, { css } from "styled-components"
 
+import { ContainerProps } from "./Container"
 import pxToRem from "../../utils/pxToRem"
 import queryLg from "../../utils/queryLg"
-
-import { ContainerProps } from "./Container"
 
 export const BaseContainer = styled.div<{ $size?: ContainerProps["size"] }>`
   margin: 0 auto;

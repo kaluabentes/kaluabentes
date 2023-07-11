@@ -4,9 +4,8 @@ import { ThemeProvider } from "styled-components"
 import "@testing-library/jest-dom"
 import "jest-styled-components"
 
-import lightTheme from "@/design-system/theme/lightTheme"
-
 import AppBar from "./AppBar"
+import lightTheme from "../../theme/lightTheme"
 
 expect.extend(toHaveNoViolations)
 

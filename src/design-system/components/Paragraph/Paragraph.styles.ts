@@ -1,7 +1,7 @@
 import styled, { css } from "styled-components"
 
-import pxToRem from "../../utils/pxToRem"
 import { ParagraphProps } from "./Paragraph"
+import pxToRem from "../../utils/pxToRem"
 
 export const Container = styled.p<{
   $variant?: ParagraphProps["variant"]

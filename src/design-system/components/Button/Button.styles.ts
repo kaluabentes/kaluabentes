@@ -1,8 +1,7 @@
 import styled, { css } from "styled-components"
 
-import pxToRem from "../../utils/pxToRem"
-
 import { ButtonProps } from "./Button"
+import pxToRem from "../../utils/pxToRem"
 
 export const Container = styled.button<{
   $variant?: ButtonProps["variant"]

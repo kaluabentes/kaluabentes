@@ -1,9 +1,9 @@
 import styled, { css } from "styled-components"
 
-import Paragraph from "../Paragraph"
-import Heading from "../Heading"
 import pxToRem from "../../utils/pxToRem"
 import queryLg from "../../utils/queryLg"
+import Heading from "../Heading"
+import Paragraph from "../Paragraph"
 
 export const Container = styled.article`
   transition: 0.3s ease-in;

@@ -1,6 +1,6 @@
-import queryLg from "../../utils/queryLg"
-import pxToRem from "../../utils/pxToRem"
 import styled, { css } from "styled-components"
+import pxToRem from "../../utils/pxToRem"
+import queryLg from "../../utils/queryLg"
 
 export const Container = styled.article<{ $isReversed?: boolean }>`
   display: flex;

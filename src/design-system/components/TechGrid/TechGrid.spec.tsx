@@ -1,19 +1,27 @@
 import { render, screen } from "@testing-library/react"
 import { axe, toHaveNoViolations } from "jest-axe"
+import { SiHtml5 } from "react-icons/si"
 import { ThemeProvider } from "styled-components"
 import "@testing-library/jest-dom"
 import "jest-styled-components"
 
-import lightTheme from "@/design-system/theme/lightTheme"
-import techItems from "@/config/techItems"
-
 import TechGrid from "./TechGrid"
+import lightTheme from "../../theme/lightTheme"
 
 expect.extend(toHaveNoViolations)
 
 const ThemedTechGrid = () => (
   <ThemeProvider theme={lightTheme}>
-    <TechGrid title="Features" items={techItems} />
+    <TechGrid
+      title="Features"
+      items={[
+        {
+          label: "HTML5",
+          icon: <SiHtml5 aria-hidden />,
+          name: "html",
+        },
+      ]}
+    />
   </ThemeProvider>
 )
 

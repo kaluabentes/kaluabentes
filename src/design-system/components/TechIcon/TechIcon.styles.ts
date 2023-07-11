@@ -1,7 +1,7 @@
 import styled, { css } from "styled-components"
 
-import pxToRem from "../../utils/pxToRem"
 import { TechIconProps } from "./TechIcon"
+import pxToRem from "../../utils/pxToRem"
 
 export const Icon = styled.div<{ $name: TechIconProps["name"] }>`
   line-height: 1;

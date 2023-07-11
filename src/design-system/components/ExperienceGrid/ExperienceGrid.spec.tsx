@@ -1,19 +1,35 @@
 import { render } from "@testing-library/react"
 import { axe, toHaveNoViolations } from "jest-axe"
+import { SiHtml5 } from "react-icons/si"
 import { ThemeProvider } from "styled-components"
 import "@testing-library/jest-dom"
 import "jest-styled-components"
 
-import lightTheme from "@/design-system/theme/lightTheme"
-import experienceItems from "@/config/experienceItems"
-
 import ExperienceGrid from "./ExperienceGrid"
+import lightTheme from "../../theme/lightTheme"
+import { ExperienceCardProps } from "../ExperienceCard"
 
 expect.extend(toHaveNoViolations)
 
+const experienceItem: ExperienceCardProps = {
+  role: "Frontend Developer",
+  company: "DBC Company",
+  description:
+    "Trabalhei para um dos clientes parceiros que possuia uma ferramenta interna.",
+  period: "Jun/2022 - Mai/2023",
+  city: "Remoto",
+  techs: [
+    {
+      label: "HTML5",
+      icon: <SiHtml5 aria-hidden />,
+      name: "html",
+    },
+  ],
+}
+
 const ThemedExperienceGrid = () => (
   <ThemeProvider theme={lightTheme}>
-    <ExperienceGrid title="Experiência" experienceItems={experienceItems} />
+    <ExperienceGrid title="Experiência" experienceItems={[experienceItem]} />
   </ThemeProvider>
 )
 

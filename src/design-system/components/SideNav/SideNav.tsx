@@ -1,13 +1,13 @@
-import { BiX } from "react-icons/bi"
 import Link from "next/link"
+import { BiX } from "react-icons/bi"
 
 import {
   Backdrop,
   Container,
-  Nav,
   Header,
   List,
   ListItem,
+  Nav,
   Title,
 } from "./SideNav.styles"
 import IconButton from "../IconButton/IconButton"

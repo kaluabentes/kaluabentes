@@ -1,7 +1,7 @@
 import type { Meta, StoryObj } from "@storybook/react"
+import { BiPlanet } from "react-icons/bi"
 
 import FeatureCard from "./FeatureCard"
-import { BiPlanet } from "react-icons/bi"
 
 const meta: Meta<typeof FeatureCard> = {
   title: "components/FeatureCard",

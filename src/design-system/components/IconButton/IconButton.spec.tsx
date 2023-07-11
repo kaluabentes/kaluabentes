@@ -1,13 +1,12 @@
-import { BiMenu } from "react-icons/bi"
 import { fireEvent, render, screen, waitFor } from "@testing-library/react"
 import { axe, toHaveNoViolations } from "jest-axe"
+import { BiMenu } from "react-icons/bi"
 import { ThemeProvider } from "styled-components"
 import "@testing-library/jest-dom"
 import "jest-styled-components"
 
-import lightTheme from "@/design-system/theme/lightTheme"
-
 import IconButton from "./IconButton"
+import lightTheme from "../../theme/lightTheme"
 
 expect.extend(toHaveNoViolations)
 

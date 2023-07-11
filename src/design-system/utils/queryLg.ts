@@ -1,4 +1,4 @@
-import { RuleSet, css } from "styled-components"
+import { css, RuleSet } from "styled-components"
 
 const queryLg = (cssString: RuleSet<object>) => css`
   @media (min-width: 821px) {
