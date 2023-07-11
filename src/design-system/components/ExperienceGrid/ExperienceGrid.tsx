@@ -6,12 +6,17 @@ import ExperienceCard, { ExperienceCardProps } from "../ExperienceCard"
 import Heading from "../Heading"
 
 interface ExperienceGridProps {
+  id?: string
   title: string
   experienceItems: ExperienceCardProps[]
 }
 
-const ExperienceGrid = ({ title, experienceItems }: ExperienceGridProps) => (
-  <Container>
+const ExperienceGrid = ({
+  id,
+  title,
+  experienceItems,
+}: ExperienceGridProps) => (
+  <Container id={id}>
     <Heading align="center">{title}</Heading>
     <Grid>
       {experienceItems.map((experienceItem, index) => (

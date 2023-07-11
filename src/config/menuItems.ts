@@ -4,12 +4,20 @@ const menuItems = [
     path: "/",
   },
   {
-    label: "Projetos",
-    path: "/projects",
+    label: "Sobre",
+    path: "#about",
   },
   {
-    label: "Posts",
-    path: "/posts",
+    label: "Tecnologias",
+    path: "#technologies",
+  },
+  {
+    label: "Diferenciais",
+    path: "#features",
+  },
+  {
+    label: "Experiência",
+    path: "#experiences",
   },
 ]
 

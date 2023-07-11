@@ -13,7 +13,10 @@ export interface ThemeContextValue {
 export const ThemeContext = createContext<ThemeContextValue | null>(null)
 
 export const ThemeContextProvider = ({ children }: { children: ReactNode }) => {
-  const [theme, setTheme] = useState(lightTheme)
+  const getMatchMedia = () => window.matchMedia("(prefers-color-scheme: dark)")
+  const [theme, setTheme] = useState(
+    getMatchMedia().matches ? darkTheme : lightTheme
+  )
 
   const toggleTheme = () => {
     setTheme(theme === lightTheme ? darkTheme : lightTheme)

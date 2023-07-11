@@ -8,6 +8,10 @@ const GlobalStyles = createGlobalStyle`
     box-sizing: border-box;
   }
 
+  html: {
+    scroll-behavior: smooth;
+  }
+
   body {
     padding: 0;
     font-family: ${(props) => props.theme.typography.fontFamily};

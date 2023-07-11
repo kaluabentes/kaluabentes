@@ -7,12 +7,13 @@ import TechIcon from "../TechIcon"
 import { TechIconProps } from "../TechIcon/TechIcon"
 
 interface TechGridProps {
+  id?: string
   title: string
   items: TechIconProps[]
 }
 
-const TechGrid = ({ title, items }: TechGridProps) => (
-  <Container>
+const TechGrid = ({ id, title, items }: TechGridProps) => (
+  <Container id={id}>
     <Heading level={2} align="left">
       {title}
     </Heading>

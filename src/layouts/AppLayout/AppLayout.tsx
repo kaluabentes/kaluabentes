@@ -1,7 +1,7 @@
 "use client"
 
 import { ReactNode, useState } from "react"
-import { BiCloudLightning, BiMenu, BiMoon, BiSun } from "react-icons/bi"
+import { BiMenu, BiMoon, BiPlanet, BiSun } from "react-icons/bi"
 
 import { Main } from "./AppLayout.styles"
 import menuItems from "../../config/menuItems"
@@ -26,7 +26,7 @@ const AppLayout = ({ children }: AppLayoutProps) => {
           icon={<BiMenu />}
           label="Menu"
         />
-        <IconButton icon={<BiCloudLightning />} label="Menu" />
+        <IconButton icon={<BiPlanet />} label="Menu" />
         <IconButton
           onClick={() => toggleTheme()}
           icon={theme.name === "light" ? <BiSun /> : <BiMoon />}

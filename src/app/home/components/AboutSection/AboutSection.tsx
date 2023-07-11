@@ -8,6 +8,7 @@ import { ButtonBox } from "./AboutSection.styles"
 
 const AboutSection = () => (
   <ImageContent
+    id="about"
     title="Sobre mim"
     content={
       <>

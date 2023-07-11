@@ -9,6 +9,7 @@ import Heading from "../Heading"
 import Paragraph from "../Paragraph"
 
 interface HeroProps {
+  id?: string
   headline: string
   paragraph: string
   buttonText: string
@@ -21,6 +22,7 @@ interface HeroProps {
 }
 
 const Hero = ({
+  id,
   headline,
   paragraph,
   buttonText,
@@ -31,7 +33,7 @@ const Hero = ({
   headingLevel = 1,
   onButtonClick,
 }: HeroProps) => (
-  <Container $isReversed={isReversed}>
+  <Container id={id} $isReversed={isReversed}>
     <ContentItem>
       <Heading level={headingLevel}>{headline}</Heading>
       <Paragraph variant="muted">{paragraph}</Paragraph>

@@ -4,8 +4,9 @@ import Hero from "@/design-system/components/Hero"
 
 const HomeHero = () => (
   <Hero
+    id="hero"
     headline="Kaluã Bentes"
-    paragraph="Desenvolvedor Frontend JAMStack, estudante de UI/UX e entusiasta de jogos HTML5. Minha missão é entregar telas de alta fidelidade, eficazes, acessíveis, performáticas e com um código escalável."
+    paragraph="Desenvolvedor Frontend JAMStack e entusiasta UI/UX. Minha missão é entregar telas de alta fidelidade, eficazes e acessíveis."
     buttonText="Vamos conversar"
     imageSrc="/kalua-bentes.png"
     imageAlt="Kaluã Bentes Avatar"

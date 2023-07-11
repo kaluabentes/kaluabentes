@@ -1,47 +1,43 @@
-import {
-  BiAtom,
-  BiCodeBlock,
-  BiCodeCurly,
-  BiMobileAlt,
-  BiPlanet,
-} from "react-icons/bi"
+import { BiAtom, BiCodeBlock, BiMobileAlt } from "react-icons/bi"
+import { GiLunarModule } from "react-icons/gi"
 import { SiJamstack } from "react-icons/si"
+import { TbRulerMeasure } from "react-icons/tb"
 
 const featureItems = [
   {
-    title: "Ownership",
+    title: "Usabilidade e simetria",
     description:
-      "O sentimento base para o sucesso de qualquer projeto é o sentimento de dono.",
-    icon: <BiPlanet />,
+      "Invisto bastante atenção aos detalhes e à harmonia visual da experiência como um todo.",
+    icon: <TbRulerMeasure />,
+  },
+  {
+    title: "Modular Code",
+    description:
+      "Sou obsecado pela criação de componentes reutilizáveis, seja funções utilitárias ou pedaços de UI.",
+    icon: <GiLunarModule />,
   },
   {
     title: "Clean Code",
     description:
-      "Procuro estar sempre estudando novos padrões e boas práticas de codificação.",
+      "Eu escrevo código que pode ser facilmente compreendido por outros desenvolvedores.",
     icon: <BiCodeBlock />,
-  },
-  {
-    title: "PWA",
-    description:
-      "Construo progressive web apps que oferecem uma experiência mais nativa.",
-    icon: <BiMobileAlt />,
   },
   {
     title: "Jamstack",
     description:
-      "Uma arquitetura que oferece máxima performance, mais segurança e baixo custo de infraestrutura.",
+      "Construo com uma arquitetura que oferece máxima performance, mais segurança e baixo custo de infraestrutura.",
     icon: <SiJamstack />,
   },
   {
-    title: "Design com código",
+    title: "PWA",
     description:
-      "Construo MVP's fullstack aplicando os príncipios de UI/UX aprendidos ao longo dos anos.",
-    icon: <BiCodeCurly />,
+      "Construo web apps com experiência de app nativo, oferecendo maior imersão em um web app.",
+    icon: <BiMobileAlt />,
   },
   {
     title: "Design Systems",
     description:
-      "Consistência visual, eficiência, escalabilidade e colaboração aprimoradas.",
+      "Crio bibliotecas de componentes que garantem mais consistência visual, eficiência e escalabilidade.",
     icon: <BiAtom />,
   },
 ]

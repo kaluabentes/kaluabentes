@@ -11,6 +11,7 @@ import {
 import Heading from "../Heading"
 
 interface ImageContentProps {
+  id?: string
   title: string
   imageSrc: string
   imageAlt: string
@@ -18,12 +19,13 @@ interface ImageContentProps {
 }
 
 const ImageContent = ({
+  id,
   title,
   imageSrc,
   imageAlt,
   content,
 }: ImageContentProps) => (
-  <Container>
+  <Container id={id}>
     <Heading level={2}>{title}</Heading>
     <ContentBox>
       <Image src={imageSrc} alt={imageAlt} />

@@ -24,19 +24,25 @@ const Home = () => (
   <Container size="lg">
     <HomeHero />
     <AboutSection />
-    <FeatureGrid
-      title="Diferenciais"
-      paragraph="Algumas das habilidades que venho construindo ao longo dos anos."
-      items={featureItems}
-    />
     <TechGrid
+      id="technologies"
       title="Tecnologias"
       items={techItems.filter(
         (techItem) =>
           !["php", "angular", "laravel", "gulp"].includes(techItem.name)
       )}
     />
-    <ExperienceGrid title="Experiência" experienceItems={experienceItems} />
+    <FeatureGrid
+      id="features"
+      title="Diferenciais"
+      paragraph="Algumas das habilidades que venho construindo ao longo dos anos."
+      items={featureItems}
+    />
+    <ExperienceGrid
+      id="experiences"
+      title="Experiência"
+      experienceItems={experienceItems}
+    />
   </Container>
 )
 

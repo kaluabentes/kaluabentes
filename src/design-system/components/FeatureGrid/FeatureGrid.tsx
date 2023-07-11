@@ -8,6 +8,7 @@ import Heading from "../Heading"
 import Paragraph from "../Paragraph"
 
 interface FeatureGridProps {
+  id?: string
   title: string
   paragraph: string
   items: {
@@ -17,8 +18,8 @@ interface FeatureGridProps {
   }[]
 }
 
-const FeatureGrid = ({ title, paragraph, items }: FeatureGridProps) => (
-  <Container>
+const FeatureGrid = ({ id, title, paragraph, items }: FeatureGridProps) => (
+  <Container id={id}>
     <Heading level={2} align="center">
       {title}
     </Heading>
