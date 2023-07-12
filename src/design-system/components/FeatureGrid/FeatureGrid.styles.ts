@@ -1,14 +1,11 @@
 import styled, { css } from "styled-components"
 
+import section from "../../mixins/section"
 import pxToRem from "../../utils/pxToRem"
 import queryLg from "../../utils/queryLg"
 
 export const Container = styled.section`
-  padding: ${pxToRem(42)} 0;
-
-  ${queryLg(css`
-    padding: ${pxToRem(84)} 0;
-  `)}
+  ${section}
 
   & h2 {
     margin-bottom: ${pxToRem(16)};
