@@ -1,17 +1,16 @@
-import { BiAtom, BiCodeBlock, BiMobileAlt } from "react-icons/bi"
+import { BiAtom, BiCodeBlock, BiMobileAlt, BiTestTube } from "react-icons/bi"
 import { GiLunarModule } from "react-icons/gi"
 import { SiJamstack } from "react-icons/si"
-import { TbRulerMeasure } from "react-icons/tb"
 
 const featureItems = [
   {
-    title: "Usabilidade e simetria",
+    title: "Código Testável",
     description:
-      "Invisto bastante atenção aos detalhes e à harmonia visual da experiência como um todo.",
-    icon: <TbRulerMeasure />,
+      "Garanto uma boa cobertura de testes utilizando tecnologias como Jest, Testing Library e Cypress.",
+    icon: <BiTestTube />,
   },
   {
-    title: "Modular Code",
+    title: "Código Modular",
     description:
       "Sou obsecado pela criação de componentes reutilizáveis, seja funções utilitárias ou pedaços de UI.",
     icon: <GiLunarModule />,

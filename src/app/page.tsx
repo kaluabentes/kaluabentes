@@ -10,6 +10,7 @@ import TechGrid from "@/design-system/components/TechGrid"
 
 import AboutSection from "./home/components/AboutSection"
 import HomeHero from "./home/components/HomeHero"
+import ProjectsSection from "./home/components/ProjectsSection/ProjectsSection"
 
 export const metadata: Metadata = {
   title: "Kaluã Bentes - Desenvolvedor Frontend",
@@ -43,6 +44,7 @@ const Home = () => (
       title="Experiência"
       experienceItems={experienceItems}
     />
+    <ProjectsSection />
   </Container>
 )
 

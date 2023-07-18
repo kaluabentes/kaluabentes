@@ -6,8 +6,6 @@ import Heading from "../Heading"
 import Paragraph from "../Paragraph"
 
 export const Container = styled.article`
-  transition: 0.3s ease-in;
-
   & * {
     margin: 0;
   }

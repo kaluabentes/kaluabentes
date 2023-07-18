@@ -22,6 +22,7 @@ const experienceItems = [
         "jest",
         "testing-library",
         "eslint",
+        "styled-components",
       ].includes(techItem.name)
     ),
   },
