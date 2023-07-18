@@ -80,7 +80,7 @@ export const Title = styled(Heading)`
 `
 
 export const Description = styled(Paragraph)`
-  line-height: 1;
+  line-height: 1.5;
   color: rgba(255, 255, 255, 0.7);
   margin-bottom: ${pxToRem(8)} !important;
   font-size: ${pxToRem(14)};
