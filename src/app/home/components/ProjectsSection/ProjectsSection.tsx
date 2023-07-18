@@ -5,6 +5,7 @@ import ProjectGrid from "@/design-system/components/ProjectGrid"
 
 const ProjectsSection = () => (
   <ProjectGrid
+    id="projects"
     title="Projetos"
     projects={projects}
     onCardClick={(path) => window.open(path, "_blank")}

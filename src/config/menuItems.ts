@@ -19,6 +19,10 @@ const menuItems = [
     label: "Experiência",
     path: "#experiences",
   },
+  {
+    label: "Projetos",
+    path: "#projects",
+  },
 ]
 
 export default menuItems
