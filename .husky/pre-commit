@@ -4,3 +4,4 @@
 yarn lint
 npx tsc
 npx jest
+yarn build
