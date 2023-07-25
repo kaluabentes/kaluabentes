@@ -10,4 +10,13 @@ export const projects: GridProject[] = [
     tags: ["Next.js", "Multi tenant", "React"],
     path: "https://github.com/kaluabentes/foodtron",
   },
+  {
+    title: "AirCombat",
+    description:
+      "Um jogo de caça renderizado no canvas do MTML5 feito com o framework Phaser.js.",
+    imageSrc: "/projects/aircombat.png",
+    imageAlt: "Screenshot do AirCombat",
+    tags: ["Games", "Phaser.js", "HTML5 Canvas"],
+    path: "https://github.com/kaluabentes/aircombat-client",
+  },
 ]
