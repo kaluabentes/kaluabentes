@@ -46,6 +46,7 @@ export const Content = styled.div`
 export const Period = styled(Paragraph)`
   font-weight: 500;
   font-size: ${pxToRem(18)} !important;
+  margin: 0 0 ${pxToRem(16)} 0;
 `
 
 export const Company = styled(Paragraph)``

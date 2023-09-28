@@ -35,7 +35,7 @@ const ImageContent = ({
     <ContentBox>
       <Image src={imageSrc} alt={imageAlt} />
       <ContentSide>
-        <Heading level={3}>{subtitle}</Heading>
+        {subtitle && <Heading level={3}>{subtitle}</Heading>}
         <Paragraph variant="muted">{content}</Paragraph>
         <ButtonBox>
           <Button
