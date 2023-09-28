@@ -55,10 +55,7 @@ export const City = styled(Paragraph)``
 export const Role = styled(Heading)`
   font-weight: 600;
   font-size: ${pxToRem(18)} !important;
-
-  ${queryLg(css`
-    margin-bottom: 0;
-  `)}
+  margin: 0 0 ${pxToRem(16)} 0;
 `
 
 export const Description = styled(Paragraph)`

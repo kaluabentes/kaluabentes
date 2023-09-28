@@ -31,3 +31,9 @@ export const Image = styled.img`
 `
 
 export const ContentSide = styled.div``
+
+export const ButtonBox = styled.p`
+  margin: 0;
+  display: flex;
+  gap: ${pxToRem(16)};
+`

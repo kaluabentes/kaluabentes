@@ -3,6 +3,7 @@
 import { ReactNode, useState } from "react"
 import { BiMenu, BiMoon, BiPlanet, BiSun } from "react-icons/bi"
 
+import Container from "@/components/Container"
 import { Main } from "./AppLayout.styles"
 import AppBar from "../../components/AppBar"
 import IconButton from "../../components/IconButton/IconButton"
@@ -38,7 +39,9 @@ const AppLayout = ({ children }: AppLayoutProps) => {
         menuItems={menuItems}
         onClose={() => setIsSideNavOpen(false)}
       />
-      <Main>{children}</Main>
+      <Main>
+        <Container size="lg">{children}</Container>
+      </Main>
     </>
   )
 }
