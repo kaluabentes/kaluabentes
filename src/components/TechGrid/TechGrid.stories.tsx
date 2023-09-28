@@ -1,7 +1,7 @@
 import type { Meta, StoryObj } from "@storybook/react"
 
 import TechGrid from "./TechGrid"
-import techItems from "../../../config/techItems"
+import techItems from "../../config/techItems"
 
 const meta: Meta<typeof TechGrid> = {
   title: "components/TechGrid",

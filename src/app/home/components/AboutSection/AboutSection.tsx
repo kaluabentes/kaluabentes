@@ -1,9 +1,9 @@
 "use client"
 
-import Button from "@/design-system/components/Button"
-import Heading from "@/design-system/components/Heading"
-import ImageContent from "@/design-system/components/ImageContent"
-import Paragraph from "@/design-system/components/Paragraph"
+import Button from "@/components/Button"
+import Heading from "@/components/Heading"
+import ImageContent from "@/components/ImageContent"
+import Paragraph from "@/components/Paragraph"
 import { ButtonBox } from "./AboutSection.styles"
 
 const AboutSection = () => (

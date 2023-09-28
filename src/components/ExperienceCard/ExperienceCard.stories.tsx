@@ -1,7 +1,7 @@
 import type { Meta, StoryObj } from "@storybook/react"
 
 import ExperienceCard from "./ExperienceCard"
-import techItems from "../../../config/techItems"
+import techItems from "../../config/techItems"
 
 const meta: Meta<typeof ExperienceCard> = {
   title: "components/ExperienceCard",

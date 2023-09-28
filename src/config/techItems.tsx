@@ -43,7 +43,7 @@ import {
 } from "react-icons/si"
 import { TbBrandReactNative } from "react-icons/tb"
 
-import { TechIconProps } from "../design-system/components/TechIcon"
+import { TechIconProps } from "../components/TechIcon"
 
 const techItems: TechIconProps[] = [
   {

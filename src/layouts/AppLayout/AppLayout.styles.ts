@@ -1,6 +1,6 @@
 import styled, { css } from "styled-components"
 
-import queryLg from "@/design-system/utils/queryLg"
+import queryLg from "@/utils/queryLg"
 
 export const Main = styled.main`
   margin-top: 60px;

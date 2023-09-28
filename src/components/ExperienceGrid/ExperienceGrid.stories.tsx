@@ -1,7 +1,7 @@
 import type { Meta, StoryObj } from "@storybook/react"
 
 import ExperienceGrid from "./ExperienceGrid"
-import experienceItems from "../../../config/experienceItems"
+import experienceItems from "../../config/experienceItems"
 
 const meta: Meta<typeof ExperienceGrid> = {
   title: "components/ExperienceGrid",

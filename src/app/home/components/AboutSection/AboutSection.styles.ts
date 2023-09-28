@@ -1,6 +1,6 @@
 import styled from "styled-components"
 
-import pxToRem from "@/design-system/utils/pxToRem"
+import pxToRem from "@/utils/pxToRem"
 
 export const ButtonBox = styled.p`
   margin: 0;

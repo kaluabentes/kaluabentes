@@ -1,7 +1,7 @@
 "use client"
 
+import ProjectGrid from "@/components/ProjectGrid"
 import { projects } from "@/config/projectItems"
-import ProjectGrid from "@/design-system/components/ProjectGrid"
 
 const ProjectsSection = () => (
   <ProjectGrid

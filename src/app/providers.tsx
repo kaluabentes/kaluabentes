@@ -2,7 +2,7 @@
 
 import { ReactNode } from "react"
 
-import ThemeProvider from "@/design-system/theme/ThemeProvider"
+import ThemeProvider from "@/theme/ThemeProvider"
 
 interface RootProvidersProps {
   children: ReactNode

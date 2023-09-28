@@ -1,5 +1,5 @@
-import StyledComponentsRegistry from "@/design-system/utils/StyledComponentsRegistry"
 import AppLayout from "@/layouts/AppLayout"
+import StyledComponentsRegistry from "@/utils/StyledComponentsRegistry"
 
 import RootProviders from "./providers"
 

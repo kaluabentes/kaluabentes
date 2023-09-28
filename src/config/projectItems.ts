@@ -1,4 +1,4 @@
-import { GridProject } from "@/design-system/components/ProjectGrid"
+import { GridProject } from "@/components/ProjectGrid"
 
 export const projects: GridProject[] = [
   {

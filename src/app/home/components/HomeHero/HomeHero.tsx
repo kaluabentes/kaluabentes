@@ -1,6 +1,6 @@
 "use client"
 
-import Hero from "@/design-system/components/Hero"
+import Hero from "@/components/Hero"
 
 const HomeHero = () => (
   <Hero
