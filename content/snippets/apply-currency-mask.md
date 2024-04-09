@@ -2,7 +2,7 @@
 title: applyCurrencyMask
 ---
 
-# Aplica uma máscara da moeda real á uma entrada
+Aplica uma máscara da moeda real á uma entrada
 
 ```typescript
 function applyCurrencyMask(input: string): string {
