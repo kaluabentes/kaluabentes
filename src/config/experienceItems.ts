@@ -3,6 +3,32 @@ import techItems from "./techItems"
 const experienceItems = [
   {
     role: "Frontend Developer",
+    company: "NPW Digital",
+    description:
+      "Estou atualmente colaborando com a manutenção, expanção e a escalação dos apps frontends da ESPM que é uma escola de marketing digital, as tecnologias principais são: Next.js, React, Jest e TypeScript.",
+    period: "Jul/2023 - Atualmente",
+    city: "Remoto",
+    techs: techItems.filter((techItem) =>
+      [
+        "html",
+        "css",
+        "javascript",
+        "next",
+        "design-system",
+        "react",
+        "react-hooks",
+        "context-api",
+        "nodejs",
+        "jest",
+        "testing-library",
+        "eslint",
+        "cssmodules",
+        "sass",
+      ].includes(techItem.name)
+    ),
+  },
+  {
+    role: "Frontend Developer",
     company: "DBC Company",
     description:
       "Trabalhei para um dos clientes parceiros que possuia uma ferramenta interna. A aplicação exibia dados gerados por um algoritmo de machine learning, o que exigia uma atenção especial à performance devido à grande quantidade de dados envolvidos. Aprender a lidar com a otimização e a manipulação eficiente desses dados, garantindo uma experiência fluida para os usuários, foi um dos principais aprendizados.",
@@ -13,6 +39,7 @@ const experienceItems = [
         "html",
         "css",
         "javascript",
+        "next",
         "design-system",
         "react",
         "react-hooks",
@@ -81,6 +108,7 @@ const experienceItems = [
         "html",
         "css",
         "javascript",
+        "next",
         "react",
         "react-hooks",
         "context-api",
